@@ -6,9 +6,11 @@
   list-style: none;
 }
 .top_main{
-  width: 750px;
+  width: 100vw;
   height: auto;
+  background-color: #0bf;
   &_upper{
+    margin: 0 50px;
     position:fixed;
     height: 300px;;
     left: 0;
@@ -37,8 +39,9 @@
   }
 
   &_middle{
+    margin: 0 50px;
     padding-top:500px;
-    background-color: #0bf;
+ 
     &_history{
       width: 520px;
       h2{
