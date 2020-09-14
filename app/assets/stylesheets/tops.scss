@@ -6,7 +6,8 @@
   list-style: none;
 }
 .top_main{
-  width: 100%;
+  width: 100vh;
+  height: auto;
   &_upper{
     position:fixed;
     height: 300px;;
@@ -37,7 +38,6 @@
 
   &_middle{
     padding-top:500px;
-    height: 9079px;
     background-color: #0bf;
     &_history{
       width: 520px;
