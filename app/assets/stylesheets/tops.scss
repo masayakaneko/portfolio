@@ -5,7 +5,7 @@
   box-sizing: border-box;
   list-style: none;
   color: #fff;
-  font-family:"arial",sans-serif;
+  font-family:"arial-black",sans-serif;
 }
 
 .top_main{
@@ -13,6 +13,7 @@
   height: 100vh;
   background-color: #0bf;
   &_upper{
+    width: 480px;
     background-color: #0bf;
     position:fixed;
     top: 0;
@@ -21,7 +22,7 @@
     z-index: 10;
     padding-top: 100px;
     &_title{
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     &_skills{
       h2{
@@ -41,6 +42,7 @@
   }
 
   &_middle{
+    width: 480px;
     background-color: red;
     // &_history{
     //   width: 520px;
