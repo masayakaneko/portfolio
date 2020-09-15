@@ -1,9 +1,9 @@
-// $(document).ready(function(){
-// // コントローラ作成
-// const controller = new ScrollMagic.Controller()
-// // アニメーションスピード
-// const speed = 0.3
-// // タイトルとスキルボックス
+$(document).ready(function(){
+// コントローラ作成
+const controller = new ScrollMagic.Controller()
+// アニメーションスピード
+const speed = 0.3
+// タイトルとスキルボックス
 // var tween = TweenMax.staggerTo('.top_main_upper',speed,{
 //   y: '-80px',
 //   }
