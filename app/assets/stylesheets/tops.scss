@@ -14,17 +14,11 @@
   background-color: #0bf;
   &_upper{
     width: 480px;
-    background-color: #0bf;
-    position:fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
     padding-top: 100px;
     &_title{
-      margin-bottom: 10px;
     }
     &_skills{
+      margin-top: 10px;
       h2{
         border-radius:4px;
         padding:0 10px;
@@ -43,7 +37,7 @@
 
   &_middle{
     width: 480px;
-    background-color: red;
+    margin-top: 20px;
     // &_history{
     //   width: 520px;
     //   h2{
@@ -68,8 +62,6 @@
     //   }
     // }
     &_products{
-      padding-top: 413px;
-      background-color: #0bf;
         h2{
           border-radius:4px;
           padding:0 10px;
