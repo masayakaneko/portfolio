@@ -21,6 +21,7 @@
     right: 0;
     z-index: 10;
     &_title{
+      margin-top:40px
     }
     &_skills{
       margin-top: 30px;
@@ -42,14 +43,14 @@
 
   &_middle{
     width: 480px;
-    padding: 500px 0 500px 0;
+    padding: 500px 0 100px 0;
     &_history{
       h2{
         margin-top: 300px;
       }
       &_boxs{
         .history_box{
-          margin-top: 1000px;
+          margin-top: 1500px;
           border: 5px solid #fff;
           border-radius: 20px;
           height: 160px;
@@ -64,19 +65,19 @@
       }
     }
     &_products{
-      margin-top: 1000px;
-      h2{
-        border-radius:4px;
-        padding:0 10px;
-        position: relative;
-        bottom: 16px;
-      }
       &_box{
+        margin-top: 1500px;
         background-color: #0bf;
         border: 5px solid #fff;
         border-radius: 20px;
         height: 160px;
         width: 400px;
+        h2{
+          border-radius:4px;
+          padding:0 10px;
+          position: relative;
+          bottom: 16px;
+        }
       }
     }
   }
