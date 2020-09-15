@@ -13,7 +13,6 @@
   height: 100%;
   background-color: #0bf;
   &_upper{
-    width: 480px;
     padding-top: 140px;
     position: fixed;
     top: 0;
@@ -45,6 +44,7 @@
     width: 480px;
     padding: 500px 0 100px 0;
     &_history{
+      padding-top: 380px;
       h2{
         margin-top: 300px;
       }

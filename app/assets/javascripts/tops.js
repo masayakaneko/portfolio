@@ -10,6 +10,7 @@ var tween = TweenMax.staggerTo('.top_main_upper',speed,{
 )
 var scene = new ScrollMagic.Scene({
   triggerElement: '.top_main_middle_history',
+  triggerHook: 'onLeave',
   duration: 200,
   offset: 0,
   reverse: true
@@ -21,6 +22,7 @@ var scene = new ScrollMagic.Scene({
 // HISTORY
 var scene = new ScrollMagic.Scene({
   triggerElement: '.top_main_middle_history',
+  triggerHook: 'onLeave',
   duration: 500,
   offset: 240,
   reverse: true
@@ -34,7 +36,8 @@ var tween = TweenMax.staggerTo('.top_main_middle_history h2',speed,{
 })
 var scene = new ScrollMagic.Scene({
   triggerElement: '.top_main_middle_history',
-  duration: 40,
+  triggerHook: 'onLeave',
+  duration: 100,
   offset: 740,
   reverse: true
 })
@@ -45,6 +48,7 @@ var scene = new ScrollMagic.Scene({
   // ヒストリー1
 var scene = new ScrollMagic.Scene({
   triggerElement: '.top_main_middle_history',
+  triggerHook: 'onLeave',
   duration: 500,
   offset: 2260,
   reverse: true
@@ -58,8 +62,9 @@ var tween = TweenMax.staggerTo('.history_box1',speed,{
 })
 var scene = new ScrollMagic.Scene({
   triggerElement: '.history_box1',
+  triggerHook: 'onLeave',
   duration: 160,
-  offset: 510,
+  offset: 130,
   reverse: true
 })
   .setTween(tween)
@@ -69,8 +74,9 @@ var scene = new ScrollMagic.Scene({
   // ヒストリー2
   var scene = new ScrollMagic.Scene({
     triggerElement: '.history_box1',
+    triggerHook: 'onLeave',
     duration: 500,
-    offset: 2094,
+    offset: 1714,
     reverse: true
   })
     .setPin('.history_box2')
@@ -82,8 +88,9 @@ var scene = new ScrollMagic.Scene({
   })
   var scene = new ScrollMagic.Scene({
     triggerElement: '.history_box2',
+    triggerHook: 'onLeave',
     duration: 160,
-    offset: 510,
+    offset: 130,
     reverse: true
   })
     .setTween(tween)
@@ -93,8 +100,9 @@ var scene = new ScrollMagic.Scene({
       // ヒストリー3
   var scene = new ScrollMagic.Scene({
     triggerElement: '.history_box2',
+    triggerHook: 'onLeave',
     duration: 500,
-    offset: 2094,
+    offset: 1714,
     reverse: true
   })
     .setPin('.history_box3')
@@ -106,8 +114,9 @@ var scene = new ScrollMagic.Scene({
   })
   var scene = new ScrollMagic.Scene({
     triggerElement: '.history_box3',
+    triggerHook: 'onLeave',
     duration: 160,
-    offset: 510,
+    offset: 130,
     reverse: true
   })
     .setTween(tween)
@@ -117,8 +126,9 @@ var scene = new ScrollMagic.Scene({
           // ヒストリー4
   var scene = new ScrollMagic.Scene({
     triggerElement: '.history_box3',
+    triggerHook: 'onLeave',
     duration: 500,
-    offset: 2094,
+    offset: 1714,
     reverse: true
   })
     .setPin('.history_box4')
@@ -130,8 +140,9 @@ var scene = new ScrollMagic.Scene({
   })
   var scene = new ScrollMagic.Scene({
     triggerElement: '.history_box4',
+    triggerHook: 'onLeave',
     duration: 160,
-    offset: 510,
+    offset: 130,
     reverse: true
   })
     .setTween(tween)
@@ -141,8 +152,9 @@ var scene = new ScrollMagic.Scene({
             // ヒストリー5
   var scene = new ScrollMagic.Scene({
     triggerElement: '.history_box4',
+    triggerHook: 'onLeave',
     duration: 500,
-    offset: 2094,
+    offset: 1714,
     reverse: true
   })
     .setPin('.history_box5')
@@ -154,8 +166,9 @@ var scene = new ScrollMagic.Scene({
   })
   var scene = new ScrollMagic.Scene({
     triggerElement: '.history_box5',
+    triggerHook: 'onLeave',
     duration: 160,
-    offset: 510,
+    offset: 130,
     reverse: true
   })
     .setTween(tween)
@@ -165,8 +178,9 @@ var scene = new ScrollMagic.Scene({
   // ヒストリー6
   var scene = new ScrollMagic.Scene({
     triggerElement: '.history_box5',
+    triggerHook: 'onLeave',
     duration: 500,
-    offset: 2094,
+    offset: 1714,
     reverse: true
   })
     .setPin('.history_box6')
@@ -178,8 +192,9 @@ var scene = new ScrollMagic.Scene({
   })
   var scene = new ScrollMagic.Scene({
     triggerElement: '.history_box6',
+    triggerHook: 'onLeave',
     duration: 160,
-    offset: 510,
+    offset: 130,
     reverse: true
   })
     .setTween(tween)
@@ -188,8 +203,9 @@ var scene = new ScrollMagic.Scene({
     // プロダクト
   var scene = new ScrollMagic.Scene({
     triggerElement: '.history_box6',
+    triggerHook: 'onLeave',
     duration: 2000,
-    offset: 2094,
+    offset: 1714,
     reverse: true
   })
     .setPin('.top_main_middle_products_box')
@@ -203,8 +219,9 @@ var scene = new ScrollMagic.Scene({
   })
   var scene = new ScrollMagic.Scene({
     triggerElement: '.top_main_middle_products_box',
-    duration: 60,
-    offset: 510,
+    triggerHook: 'onLeave',
+    duration: 120,
+    offset: 130,
     reverse: true
   })
     .setTween(tween)
@@ -219,8 +236,9 @@ var scene = new ScrollMagic.Scene({
   })
   var scene = new ScrollMagic.Scene({
     triggerElement: '.top_main_middle_products_box',
-    duration: 20,
-    offset: 540,
+    triggerHook: 'onLeave',
+    duration: 60,
+    offset: 190,
     reverse: true
   })
     .setTween(tween)
