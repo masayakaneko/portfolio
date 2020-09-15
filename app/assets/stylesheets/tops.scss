@@ -14,11 +14,11 @@
   background-color: #0bf;
   &_upper{
     width: 480px;
-    padding-top: 100px;
+    padding-top: 140px;
     &_title{
     }
     &_skills{
-      margin-top: 10px;
+      margin-top: 30px;
       h2{
         border-radius:4px;
         padding:0 10px;
@@ -37,7 +37,7 @@
 
   &_middle{
     width: 480px;
-    margin-top: 20px;
+    margin-top: 30px;
     // &_history{
     //   width: 520px;
     //   h2{
@@ -77,9 +77,12 @@
         }
     }
   }
+  h1{
+    font-size: 40px;
+  }
   h2{
     font-size: 24px;
-    background-color: red;
+    background-color: #0bf;
     display: inline-block;
     line-height:24px;
   }
