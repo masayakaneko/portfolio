@@ -236,7 +236,7 @@ var scene = new ScrollMagic.Scene({
     yoyo: true
   })
   var tween2 = TweenMax.staggerTo('.top_main_upper_skills_box h2',speed,{
-    color: '#ff8',
+    color: '#f88',
     repeat: 1,
     yoyo: true
   })
