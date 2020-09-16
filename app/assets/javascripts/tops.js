@@ -220,7 +220,7 @@ var scene = new ScrollMagic.Scene({
   var scene = new ScrollMagic.Scene({
     triggerElement: '.top_main_middle_products_box',
     triggerHook: 'onLeave',
-    duration: 120,
+    duration: 240,
     offset: 130,
     reverse: true
   })
@@ -229,20 +229,35 @@ var scene = new ScrollMagic.Scene({
     .addTo(controller)
 
     // ぶつかられた方
-    var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
-      y: '-10px',
-      repeat: 1,
-       yoyo: true
+  var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
+    border: '5px solid #ff8',
+    y: '-20px',
+    repeat: 1,
+    yoyo: true
+  })
+  var tween2 = TweenMax.staggerTo('.top_main_upper_skills_box h2',speed,{
+    color: '#ff8',
+    repeat: 1,
+    yoyo: true
   })
   var scene = new ScrollMagic.Scene({
     triggerElement: '.top_main_middle_products_box',
     triggerHook: 'onLeave',
-    duration: 60,
-    offset: 190,
+    duration: 120,
+    offset: 270,
     reverse: true
   })
     .setTween(tween)
     .addIndicators({ name: 'products' })
     .addTo(controller)
-
+  var scene2 = new ScrollMagic.Scene({
+    triggerElement: '.top_main_middle_products_box',
+    triggerHook: 'onLeave',
+    duration: 120,
+    offset: 270,
+    reverse: true
+  })
+    .setTween(tween2)
+    .addIndicators({ name: 'products' })
+    .addTo(controller)
 });
