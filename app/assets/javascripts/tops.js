@@ -213,7 +213,7 @@ var scene = new ScrollMagic.Scene({
     .addTo(controller)
 
   var tween = TweenMax.staggerTo('.top_main_middle_products_box',speed,{
-      y: '-35px',
+      y: '-30px',
       repeat: 1,
        yoyo: true
   })
