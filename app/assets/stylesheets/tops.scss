@@ -122,10 +122,8 @@
   display:flex;
   justify-content:flex-start;
   .skill{
-    >p{
-      font-size: 10px;
-      font-weight: bold;
-    }
+    opacity: 0.1;
+    display: none;
     &_icon{
       box-sizing: border-box;
       display: inline-block;
@@ -140,16 +138,39 @@
       font-weight: bold;
       font-size: 22px;
     }
+    &_name{
+      font-size: 10px;
+      font-weight: bold;
+    }
   }
 }
-#ps,#ai{
+#ps,#ai,#fl{
   border: 3px solid #fff;
 }
-#html,#css,#js{
+#html,#css,#js,#ruby{
   background-color: #fff;
   border: 3px solid #fff;
   p{
     color: #0bf;
+  }
+  .pentagon{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    &_top{
+      width: 30px;
+      border-width: 0px 10px 10px;
+      border-style: solid;
+      border-color: #0bf transparent;
+    }
+    &_bottom{
+      width: 0;
+      height: 0;
+      border-top: 16px solid #0bf;
+      border-right: 15px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-left: 15px solid transparent;
+    }
   }
 }
 
