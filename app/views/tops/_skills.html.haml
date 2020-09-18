@@ -1,4 +1,4 @@
-.skills.skills_web
+.skills.skills_top
   .skill.skill_html.none
     .skill_icon#html
       %p 5
@@ -22,8 +22,23 @@
       .circle
         .circle_mini
     %p.skill_name Ruby on Rails
-
-.skills.skills_design
+  .skill.skill_mysql.none
+    .skill_icon#mysql
+      .db_circles
+        .db_circles_circle1.db_circles_circle
+        .db_circles_circle2.db_circles_circle
+        .db_circles_circle3.db_circles_circle
+    %p.skill_name MySQL
+.skills.skills_bottom
+  .skill.skill_aws.none
+    .skill_icon#aws
+      %p aws
+    %p.skill_name AWS
+  .skill.skill_wp.none
+    .skill_icon#wp
+      .image_wp
+        = image_tag "WordPress-logotype-simplified.png", size: "30x30"
+    %p.skill_name WordPress
   .skill.skill_ps.none
     .skill_icon#ps
       %p Ps

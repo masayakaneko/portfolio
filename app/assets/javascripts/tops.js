@@ -261,7 +261,7 @@ var scene5 = new ScrollMagic.Scene({
     .addIndicators({ name: 'box5透過' })
     .addTo(controller)
 
-    var tween = TweenMax.staggerTo('.skill_html,.skill_css,.skill_js,.skill_ruby,.skill_rails',speed,{
+    var tween = TweenMax.staggerTo('.skill_html,.skill_css,.skill_js,.skill_ruby,.skill_rails,.skill_mysql,.skill_aws',speed,{
       display:'block',
       opacity: 1,
       
@@ -301,6 +301,22 @@ var scene5 = new ScrollMagic.Scene({
     .setTween(tween)
     .addIndicators({ name: 'box6透過' })
     .addTo(controller)
+//WardPress
+var tween = TweenMax.staggerTo('.skill_wp',speed,{
+  display:'block',
+  opacity: 1,
+  
+})
+var scene3 = new ScrollMagic.Scene({
+  triggerElement: '.history_box6',
+  triggerHook: 'onLeave',
+  duration: 160,
+  offset: 130,
+  reverse: true
+})
+  .setTween(tween)
+  .addIndicators({ name: 'WardPress' })
+  .addTo(controller)
 // Ps アイコン変化
 var tween = TweenMax.staggerTo('#ps,#ps p',1,{
   backgroundColor: '#fff',
@@ -344,6 +360,20 @@ var scene5 = new ScrollMagic.Scene({
   .setTween(tween)
   .addIndicators({ name: 'CC' })
   .addTo(controller)
+  //HTML CSS アイコン変化
+  var tween = TweenMax.staggerTo('#html p,#css p',1,{
+    fontSize: '28px',
+  })
+  var scene3 = new ScrollMagic.Scene({
+    triggerElement: '.history_box6',
+    triggerHook: 'onLeave',
+    duration: 160,
+    offset: 130,
+    reverse: true
+  })
+    .setTween(tween)
+    .addIndicators({ name: 'CC' })
+    .addTo(controller)
   // プロダクト
   var scene1 = new ScrollMagic.Scene({
     triggerElement: '.history_box6',

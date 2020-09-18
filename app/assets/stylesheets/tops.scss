@@ -146,7 +146,7 @@
     }
   }
 }
-.skills_web{
+.skills_top{
   margin-bottom: 8px;
 }
 #ps,#ai,#fl{
@@ -155,11 +155,16 @@
     font-size: 22px;
   }
 }
-#html,#css,#js,#ruby,#rails{
+#html,#css,#js,#ruby,#rails,#mysql,#aws,#wp{
   background-color: #fff;
   border: 3px solid #fff;
   p{
     color: #0bf;
+  }
+  .image_wp{
+    position: relative;
+    top: 6px;
+    filter: invert(64%) sepia(80%) saturate(410%) hue-rotate(169deg) brightness(100%) contrast(100%);
   }
   .pentagon{
     display: inline-block;
@@ -190,15 +195,41 @@
     border-radius: 50% / 100% 100% 0 0;
     background-color: #0bf;
     transform: scale(0.8);
+    &_mini{
+      position: relative;
+      top: 2px;
+      left: 6px;
+      width: 34px;
+      height: 34px;
+      border-radius: 100% / 100% 100% 100% 100%;
+      background-color: #fff;
+    }
   }
-  .circle_mini{
+  .db_circles{
+
+    display: inline-block;
     position: relative;
-    top: 2px;
-    left: 6px;
-    width: 32px;
-    height: 32px;
-    border-radius: 100% / 100% 100% 100% 100%;
-    background-color: #fff;
+    bottom: 2px;
+    height: 40px;
+    &_circle{
+      width: 28px;
+      height: 16px;
+      border-radius:50% 50% 50% 50%/ 40% 40% 40% 40%; 
+      border: 3px solid #fff;
+      background-color: #0bf;
+    }
+    &_circle1{
+      position: relative;
+      top: 24px;
+    }
+    &_circle2{
+      position: relative;
+      top: 0px;
+    }
+    &_circle3{
+      position: relative;
+      bottom: 24px;
+    }
   }
 }
 
