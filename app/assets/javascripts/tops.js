@@ -261,10 +261,9 @@ var scene5 = new ScrollMagic.Scene({
     .addIndicators({ name: 'box5透過' })
     .addTo(controller)
 
-    var tween = TweenMax.staggerTo('.skill_html,.skill_css,.skill_js,.skill_ruby,.skill_rails,.skill_mysql,.skill_aws',speed,{
+    var tween = TweenMax.staggerTo('.skill_html,.skill_css,.skill_js,.skill_ruby,.skill_rails,.skill_mysql,.skill_aws,.skill_gh',speed,{
       display:'block',
       opacity: 1,
-      
     })
     var scene3 = new ScrollMagic.Scene({
       triggerElement: '.history_box5',
@@ -363,11 +362,13 @@ var scene5 = new ScrollMagic.Scene({
   //HTML CSS アイコン変化
   var tween = TweenMax.staggerTo('#html p,#css p',1,{
     fontSize: '28px',
+    repeat: 1,
+    yoyo: true,
   })
   var scene3 = new ScrollMagic.Scene({
     triggerElement: '.history_box6',
     triggerHook: 'onLeave',
-    duration: 160,
+    duration: 320,
     offset: 130,
     reverse: true
   })
