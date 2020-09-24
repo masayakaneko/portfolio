@@ -18,4 +18,3 @@
 
 //= require_jquery.jquery.scrollmagic.min
 
-
