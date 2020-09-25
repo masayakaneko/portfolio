@@ -2,7 +2,7 @@
   --bg_color: rgb(0, 187, 255);
   --f_color: rgb(255, 255, 255);
   --ef_color: rgb(255, 255, 136);
-  --ef_color2: rgb(255, 68, 68);
+  --ef_color2: rgb(255, 136, 136);
 }
 
 *{
@@ -14,7 +14,16 @@
   color: var(--f_color);
   font-family:'arial',sans-serif;
 }
-
+.beam{
+  position: fixed;
+  right: 245px;
+  top: 220px;
+  z-index: 20;
+  height: 6px;
+  width: 20px;
+  background-color: var(--ef_color);
+  transform:rotate(-53deg);
+}
 .top_main{
   width: 100%;
   height: 100%;
@@ -62,6 +71,7 @@
     right: 0;
     z-index: 10;
     &_title{
+      height: 90px;
       margin-top:52px;
       margin-bottom: 10px;
     }
@@ -163,11 +173,28 @@
   position: relative;
   bottom: 10px;
   display:flex;
-  justify-content: flex-start;
   font-family:'impact',sans-serif;
+  &_top{
+    width: 50%;
+    justify-content: space-between;
+  }
+  &_middle{
+    width: 50%;
+    justify-content: space-between;
+  }
+  &_bottom{
+    width: 83%;
+    justify-content: space-between;
+  }
   .skill{
+    width: 65px;
+    height: 70px;
+    margin: 0px;
     opacity: 0.1;
     display: none;
+    &_pscc{
+      opacity: 1;
+    }
     &_icon{
       box-sizing: border-box;
       display: inline-block;
@@ -191,9 +218,6 @@
     }
   }
 }
-.skills_top{
-  margin-bottom: 8px;
-}
 #ps,#ai,#fl{
   border: 3px solid var(--f_color);
   p{
@@ -207,25 +231,30 @@
   align-items: center;
   p{
     color: var(--bg_color);
-    font-size: 26px;
+    font-size: 22px;
   }
 }
-#triangle,#drum,#html,#css,#js,#ruby,#rails,#mysql,#wp,#aws,#gh{
+#triangle,#cymb,#drum,#bolt,#html,#css,#js,#ruby,#rails,#mysql,#wp,#aws,#gh{
   background-color: var(--f_color);
   border: 3px solid var(--f_color);
   display: flex;
   align-items: center;
+  
   .fa{
+    &-bolt{
+      font-size:28px;
+      color: var(--bg_color);
+    }
     &-drum{
       font-size:32px;
       color: var(--bg_color);
     }
     &-html5{
-      font-size:32px;
+      font-size:28px;
       color: var(--bg_color);
     }
     &-css3-alt{
-      font-size:32px;
+      font-size:28px;
       color: var(--bg_color);
     }
     &-gem{
@@ -326,8 +355,31 @@
       bottom: 24px;
     }
   }
+  .cymb1{
+    display:inline-block;
+    width: 24px;
+    height: 30px;
+    border: 3px solid var(--bg_color);
+    border-radius: 50%;
+    background-color: var(--bg_color);
+    .cymb2{
+      position:relative;
+      top: 4px;
+      right: 6px;
+      display:inline-block;
+      width: 30px;
+      height: 16px;
+      border: 3px solid var(--bg_color);
+      border-radius: 50%;
+      background-color: var(--bg_color);
+      .cymbSpace{
+        position:relative;
+        bottom: 10px;
+        display:inline-block;
+        width: 8px;
+        height: 40px;
+        background-color: var(--f_color);
+      }
+    }
+  }
 }
-
-
-
-

@@ -98,7 +98,7 @@ $(function () {
     .addTo(controller)
 
     //楽器が出てくる
-    var tween = TweenMax.staggerTo('.skill_triangle,.skill_drum',speed,{
+    var tween = TweenMax.staggerTo('.skill_triangle,.skill_cymb,.skill_drum',speed,{
       display:'block',
       opacity: 1,
 
@@ -128,21 +128,67 @@ $(function () {
       .setTween(tween)
       .addIndicators({ name: 'triangle' })
       .addTo(controller)
-    //楽器が消える
-    var tween = TweenMax.staggerTo('.skill_triangle,.skill_drum',speed,{
-      display:'none',
-      opacity: 0,
+    //レーザービーム1
+    var tween = TweenMax.staggerTo('.beam',speed,{
+      x: '-98px',
+      y: '145px',
+      width: '40px'
     })
-    var scene3 = new ScrollMagic.Scene({
+    var scene４ = new ScrollMagic.Scene({
       triggerElement: '.history_box1',
       triggerHook: 'onLeave',
-      duration: 500,
+      duration: 200,
       offset: 790,
       reverse: true
     })
       .setTween(tween)
-      .addIndicators({ name: 'triangle' })
+      .addIndicators({ name: 'beam1' })
       .addTo(controller)
+    //攻撃当たる
+    var tween = TweenMax.staggerTo('#drum',speed,{
+      backgroundColor: ef_color,
+      borderColor: ef_color,
+      color: ef_color,
+    })
+    var scene3 = new ScrollMagic.Scene({
+      triggerElement: '.history_box1',
+      triggerHook: 'onLeave',
+      duration: 100,
+      offset: 980,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'drums' })
+      .addTo(controller)
+    //消える　
+    var tween = TweenMax.staggerTo('.skill_drum i',speed,{
+      opacity: '0',
+    })
+    var scene3 = new ScrollMagic.Scene({
+      triggerElement: '.history_box1',
+      triggerHook: 'onLeave',
+      duration: 100,
+      offset: 980,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'drums' })
+      .addTo(controller)
+    //消える　
+    var tween = TweenMax.staggerTo('#drum,.skill_drum p,.beam',speed,{
+      display: 'none',
+    })
+    var scene3 = new ScrollMagic.Scene({
+      triggerElement: '.history_box1',
+      triggerHook: 'onLeave',
+      duration: 100,
+      offset: 980,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'drums' })
+      .addTo(controller)
+
     // 大学生活
     var scene1 = new ScrollMagic.Scene({
       triggerElement: '.history_box1',
@@ -197,8 +243,7 @@ $(function () {
       .setPin('.history_box3')
       .addIndicators({ name: 'ヒストリー3' })
       .addTo(controller)
-
-      var tween = TweenMax.staggerTo('.history_box3',speed,{
+    var tween = TweenMax.staggerTo('.history_box3',speed,{
         opacity: 0
     })
     var scene2 = new ScrollMagic.Scene({
@@ -210,6 +255,52 @@ $(function () {
     })
       .setTween(tween)
       .addIndicators({ name: 'box3透過' })
+      .addTo(controller)
+
+    //幅変更
+    var tween = TweenMax.staggerTo('.skills_top',speed,{
+        width: '83%',
+    })
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.history_box3',
+      triggerHook: 'onLeave',
+      duration: 160,
+      offset: 130,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'box3透過' })
+      .addTo(controller)
+    // 電動工具アイコン出現
+    var tween = TweenMax.staggerTo('.skill_bolt',speed,{
+      display:'block',
+      opacity: 1,
+
+    })
+    var scene3 = new ScrollMagic.Scene({
+      triggerElement: '.history_box3',
+      triggerHook: 'onLeave',
+      duration: 160,
+      offset: 130,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'Electric' })
+      .addTo(controller)
+    // 電動工具アイコン出現
+    var tween = TweenMax.staggerTo('.skill_bolt',speed,{
+      display:'none',
+      opacity: 0,
+    })
+    var scene4 = new ScrollMagic.Scene({
+      triggerElement: '.history_box3',
+      triggerHook: 'onLeave',
+      duration: 160,
+      offset: 1090,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'Electric' })
       .addTo(controller)
 
     // オフ会
@@ -237,7 +328,7 @@ $(function () {
       .setTween(tween)
       .addIndicators({ name: 'box4透過' })
       .addTo(controller)
-    //  ai アイコン消滅
+    // ai アイコン消滅
     var tween = TweenMax.staggerTo('.skill_ai',speed,{
       display:'none',
       opacity: 0.5,
@@ -254,9 +345,10 @@ $(function () {
       .addIndicators({ name: 'CS5' })
       .addTo(controller)
     // aicc アイコン出現
-    var tween = TweenMax.staggerTo('.skill_aicc',speed,{
+    var tween = TweenMax.staggerTo('.skill_aicc, #aicc p',speed,{
       display:'block',
       opacity: 1,
+      fontSize: '26px',
 
     })
     var scene3 = new ScrollMagic.Scene({
@@ -284,7 +376,8 @@ $(function () {
       .setTween(tween)
       .addIndicators({ name: 'CC' })
       .addTo(controller)
-        var tween = TweenMax.staggerTo('#fl p',speed,{
+      
+    var tween = TweenMax.staggerTo('#fl p',speed,{
       x: '0px',
     })
     var scene5 = new ScrollMagic.Scene({
@@ -311,7 +404,7 @@ $(function () {
       .setTween(tween)
       .addIndicators({ name: 'CC' })
       .addTo(controller)
-        var tween = TweenMax.staggerTo('#ps p',speed,{
+    var tween = TweenMax.staggerTo('#ps p',speed,{
       x: '0px',
     })
     var scene5 = new ScrollMagic.Scene({
@@ -325,6 +418,11 @@ $(function () {
       .addIndicators({ name: 'CC' })
       .addTo(controller)
     
+
+
+
+
+
     // 桜パソコンスクール
     var scene1 = new ScrollMagic.Scene({
       triggerElement: '.history_box4',
@@ -337,8 +435,23 @@ $(function () {
       .addIndicators({ name: 'ヒストリー5' })
       .addTo(controller)
 
+    var tween = TweenMax.staggerTo('.skills_top',speed,{
+      height: '70px',
+      width: '50%',
+    })
+    var scene4 = new ScrollMagic.Scene({
+      triggerElement: '.history_box4',
+      triggerHook: 'onLeave',
+      duration: 160,
+      offset: 1874,
+      reverse: true
+    })
+    .setTween(tween)
+    .addIndicators({ name: '下移動' })
+    .addTo(controller)
+
     var tween = TweenMax.staggerTo('.history_box5',speed,{
-        opacity: 0
+      opacity: 0
     })
     var scene2 = new ScrollMagic.Scene({
       triggerElement: '.history_box5',
@@ -347,7 +460,7 @@ $(function () {
       offset: 130,
       reverse: true
     })
-      .setTween(tween)
+    .setTween(tween)
       .addIndicators({ name: 'box5透過' })
       .addTo(controller)
 
@@ -365,28 +478,58 @@ $(function () {
         .setTween(tween)
         .addIndicators({ name: 'html,css,js' })
         .addTo(controller)
+    //top幅変更
+    var tween = TweenMax.staggerTo('.skills_top',speed,{
+      width: '33%',
+    })
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.history_box5',
+      triggerHook: 'onLeave',
+      duration: 160,
+      offset: 0,
+      reverse: true
+    })
+    .setTween(tween)
+    .addIndicators({ name: 'box3透過' })
+    .addTo(controller)
+
+    //bottom幅変更
+
+    var tween = TweenMax.staggerTo('.skills_middle',speed,{
+        width: '67%',
+        justifyContent: 'flex-end',
+    })
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.history_box5',
+      triggerHook: 'onLeave',
+      duration: 160,
+      offset: 0,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'box3透過' })
+      .addTo(controller)
 
     //  ps アイコン消滅
     var tween = TweenMax.staggerTo('.skill_ps',speed,{
       display:'none',
-      opacity: 0.5,
+      opacity: 1,
 
     })
     var scene3 = new ScrollMagic.Scene({
       triggerElement: '.history_box5',
       triggerHook: 'onLeave',
-      duration: 160,
+      duration: 161,
       offset: 130,
       reverse: true
     })
       .setTween(tween)
       .addIndicators({ name: 'CS5' })
       .addTo(controller)
-    // aicc アイコン出現
-    var tween = TweenMax.staggerTo('.skill_pscc',speed,{
+    // pscc アイコン出現
+    var tween = TweenMax.staggerTo('.skill_pscc, #pscc p',speed,{
       display:'block',
-      opacity: 1,
-
+      fontSize: '26px',
     })
     var scene3 = new ScrollMagic.Scene({
       triggerElement: '.history_box5',
@@ -398,8 +541,66 @@ $(function () {
       .setTween(tween)
       .addIndicators({ name: 'CS5' })
       .addTo(controller)
+    //Fl 目線
+    var tween = TweenMax.staggerTo('#fl p',speed,{
+      x: '-8px',
+    })
+    var scene4 = new ScrollMagic.Scene({
+      triggerElement: '.history_box5',
+      triggerHook: 'onLeave',
+      duration: 500,
+      offset: 210,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'CC' })
+      .addTo(controller)
+      
+    var tween = TweenMax.staggerTo('#fl p',speed,{
+      x: '0px',
+    })
+    var scene5 = new ScrollMagic.Scene({
+      triggerElement: '.history_box5',
+      triggerHook: 'onLeave',
+      duration: 1000,
+      offset: 710,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'CC' })
+      .addTo(controller)
+    //top幅変更
+    var tween = TweenMax.staggerTo('.skills_top',speed,{
+      width: '100%',
+      justifyContent: 'left',
+    })
+    var scene4 = new ScrollMagic.Scene({
+      triggerElement: '.history_box5',
+      triggerHook: 'onLeave',
+      duration: 200,
+      offset: 1514,
+      reverse: true
+    })
+    .setTween(tween)
+    .addIndicators({ name: '左移動' })
+    .addTo(controller)
+    //bottom幅変更
+    var tween = TweenMax.staggerTo('.skills_middle',speed,{
+      width: '100%',
+      justifyContent: 'flex-end',
+    })
+    var scene4 = new ScrollMagic.Scene({
+      triggerElement: '.history_box5',
+      triggerHook: 'onLeave',
+      duration: 200,
+      offset: 1514,
+      reverse: true
+    })
+    .setTween(tween)
+    .addIndicators({ name: '右移動' })
+    .addTo(controller)
 
-    // テックキャンプ 
+    // プログラミング
     var scene1 = new ScrollMagic.Scene({
       triggerElement: '.history_box5',
       triggerHook: 'onLeave',
@@ -424,13 +625,13 @@ $(function () {
       .setTween(tween)
       .addIndicators({ name: 'box6透過' })
       .addTo(controller)
-  //
+    //出現
     var tween = TweenMax.staggerTo('.skill_js,.skill_js,.skill_ruby,.skill_rails,.skill_mysql,.skill_aws,.skill_gh',speed,{
       display:'block',
       opacity: 1,
       
     })
-    var scene3 = new ScrollMagic.Scene({
+    var scene1 = new ScrollMagic.Scene({
       triggerElement: '.history_box6',
       triggerHook: 'onLeave',
       duration: 160,
@@ -441,14 +642,27 @@ $(function () {
       .addIndicators({ name: 'WardPress' })
       .addTo(controller)
 
-    //HTML CSS エフェクト
-    var tween = TweenMax.staggerTo('#html i,#css i',speed,{
-      fontSize: '36px',
-      repeat: 1,
-      yoyo: true,
-      display: 'none',
+    //bottom幅変更
+    var tween = TweenMax.staggerTo('.skills_middle',speed,{
+      justifyContent: 'left',
     })
-    var scene3 = new ScrollMagic.Scene({
+    var scene4 = new ScrollMagic.Scene({
+      triggerElement: '.history_box6',
+      triggerHook: 'onLeave',
+      duration: 200,
+      offset: 290,
+      reverse: true
+    })
+    .setTween(tween)
+    .addIndicators({ name: '左移動' })
+    .addTo(controller)
+
+    //HTML CSS エフェクト
+    var tween = TweenMax.staggerTo('.fa-html5,.fa-css3-alt',speed,{
+      fontSize: '32px',
+    })
+    
+    var scene1 = new ScrollMagic.Scene({
       triggerElement: '.history_box6',
       triggerHook: 'onLeave',
       duration: 320,
@@ -463,7 +677,7 @@ $(function () {
       repeat: 1,
       yoyo: true,
     })
-    var scene3 = new ScrollMagic.Scene({
+    var scene2 = new ScrollMagic.Scene({
       triggerElement: '.history_box6',
       triggerHook: 'onLeave',
       duration: 320,
