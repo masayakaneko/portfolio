@@ -74,6 +74,43 @@
       height: 90px;
       margin-top:52px;
       margin-bottom: 10px;
+      .portfolio{
+        // background-color: var(--ef_color2);
+        display: inline-block;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        line-height: 60px;
+        font-size: 60px;
+        font-family:"arial-black",sans-serif;
+      }
+      .energyBall{
+        z-index: 1;
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        &_right{
+          background-color: var(--ef_color);
+          position: relative;
+          right: 45px;
+          bottom: 2px;
+          opacity:0;
+        }
+        &_left{
+          z-index: 10;
+          opacity: 0.4;
+          opacity: 0;
+          border-radius: 50%;
+          border-bottom: 40px solid red;
+          border-left: 43px solid transparent;
+          border-right: 18px solid transparent;
+        }
+      }
+      .masayakaneko{
+        line-height: 30px;
+        font-size: 30px;
+        font-family:"arial-black",sans-serif;
+      }
     }
     &_skills{
       display: inline-block;
@@ -134,16 +171,6 @@
       }
     }
   }
-  .masayakaneko{
-    line-height: 30px;
-    font-size: 30px;
-    font-family:"arial-black",sans-serif;
-  }
-  .portfolio{
-    line-height: 60px;
-    font-size: 60px;
-    font-family:"arial-black",sans-serif;
-  }
   h2{
     font-size: 24px;
     background-color: var(--bg_color);
@@ -176,15 +203,15 @@
   font-family:'impact',sans-serif;
   &_top{
     width: 50%;
-    justify-content: space-between;
+    justify-content: left;
   }
   &_middle{
     width: 50%;
     justify-content: space-between;
   }
   &_bottom{
-    width: 83%;
-    justify-content: space-between;
+    width: 84%;
+    justify-content: flex-end;
   }
   .skill{
     width: 65px;
@@ -234,7 +261,7 @@
     font-size: 22px;
   }
 }
-#triangle,#cymb,#drum,#bolt,#html,#css,#js,#ruby,#rails,#mysql,#wp,#aws,#gh{
+#triangle,#cymb,#drum,#impact,#sander,#jigsaw,#hammerdrill,#sabersaw,#html,#css,#js,#ruby,#rails,#mysql,#wp,#aws,#gh{
   background-color: var(--f_color);
   border: 3px solid var(--f_color);
   display: flex;
@@ -291,7 +318,8 @@
     position: relative;
     bottom: 7px;
     right: 27px;
-    border-top: 13px solid transparent;
+    height: 20px;
+    border-top: 14px solid transparent;
     border-right: 13px solid transparent;
     border-bottom: 22px solid var(--f_color);
     border-left: 13px solid transparent;
@@ -374,7 +402,7 @@
       background-color: var(--bg_color);
       .cymbSpace{
         position:relative;
-        bottom: 10px;
+        bottom: 15px;
         display:inline-block;
         width: 8px;
         height: 40px;
