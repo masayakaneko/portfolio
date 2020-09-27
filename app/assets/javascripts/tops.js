@@ -49,7 +49,7 @@ $(function () {
       triggerElement: '.top_main_middle_history',
       triggerHook: 'onLeave',
       duration: 500,
-      offset: 240,
+      offset: 207,
       reverse: true
     })
       .setPin('.top_main_middle_history')
@@ -63,7 +63,7 @@ $(function () {
       triggerElement: '.top_main_middle_history',
       triggerHook: 'onLeave',
       duration: 100,
-      offset: 740,
+      offset: 707,
       reverse: true
     })
       .setTween(tween)
@@ -78,7 +78,7 @@ $(function () {
       triggerElement: '.top_main_middle_history',
       triggerHook: 'onLeave',
       duration: 500,
-      offset: 2260,
+      offset: 2227,
       reverse: true
     })
       .setPin('.history_box1')
@@ -91,7 +91,7 @@ $(function () {
     var scene2 = new ScrollMagic.Scene({
       triggerElement: '.history_box1',
       triggerHook: 'onLeave',
-      duration: 160,
+      duration: 120,
       offset: 130,
       reverse: true
     })
@@ -557,7 +557,7 @@ $(function () {
       triggerElement: '.history_box1',
       triggerHook: 'onLeave',
       duration: 500,
-      offset: 1714,
+      offset: 1681,
       reverse: true
     })
     
@@ -603,7 +603,7 @@ $(function () {
       triggerElement: '.history_box2',
       triggerHook: 'onLeave',
       duration: 500,
-      offset: 1714,
+      offset: 1681,
       reverse: true
     })
       .setPin('.history_box3')
@@ -615,7 +615,7 @@ $(function () {
     var scene2 = new ScrollMagic.Scene({
       triggerElement: '.history_box3',
       triggerHook: 'onLeave',
-      duration: 160,
+      duration: 120,
       offset: 130,
       reverse: true
     })
@@ -654,40 +654,143 @@ $(function () {
       .addIndicators({ name: 'Electric' })
       .addTo(controller)
 
-    // ビーム
-    // var tween = TweenMax.staggerTo('.energyBall_left',speed,{
-    //   position: 'relative',
-    //   top: '95px',
-    //   left: '216px',
-    //   opacity: 1,
-    //   borderRadius: '0%',
-    //   scale: 5,
-    // })
-    // var scene3 = new ScrollMagic.Scene({
-    //   triggerElement: '.history_box3',
-    //   triggerHook: 'onLeave',
-    //   duration: 1000,
-    //   offset: 130,
-    //   reverse: true
-    // })
-    //   .setTween(tween)
-    //   .addIndicators({ name: 'Electric' })
-    //   .addTo(controller)
+    ////中__発光__1st
+    var tween = TweenMax.staggerTo('.portfolio_middle_o',speed,{
+      repeat: 1,
+      yoyo: true,
+      color: ef_color,
+    })
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.history_box3',
+      triggerHook: 'onLeave',
+      duration: 200,
+      offset: 200,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: '中O' })
+      .addTo(controller)
+    //中__エネルギー弾__移動
+    var tween = TweenMax.staggerTo('.energyBall_right',speed,{
+      backgroundColor: ef_color,
+      opacity: 1,
+      right: '158px',
+    })
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.history_box3',
+      triggerHook: 'onLeave',
+      duration: 1,
+      offset:200,
+      reverse: true
+    })
+    .setTween(tween)
+    .addIndicators({ name: '中O' })
+    .addTo(controller)
+    //中__エネルギー弾__発射準備
+    var tween = TweenMax.staggerTo('.energyBall_right',speed,{
+      backgroundColor: ef_color,
+      opacity: 1,
+      scale: 0.3,
+    })
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.history_box3',
+      triggerHook: 'onLeave',
+      duration: 160,
+      offset:201,
+      reverse: true
+    })
+    .setTween(tween)
+    .addIndicators({ name: '中O' })
+    .addTo(controller)
+    //ビーム登場
+    var tween = TweenMax.staggerTo('.energyBall_left',speed,{
+      opacity: 1,
+    })
+    var scene3 = new ScrollMagic.Scene({
+      triggerElement: '.history_box3',
+      triggerHook: 'onLeave',
+      duration: 100,
+      offset: 400,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'Electric' })
+      .addTo(controller)
+    //ビーム発射
+    var tween = TweenMax.staggerTo('.energyBall_left',speed,{
+      width: '260px',
+    })
+    var scene3 = new ScrollMagic.Scene({
+      triggerElement: '.history_box3',
+      triggerHook: 'onLeave',
+      duration: 400,
+      offset: 400,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'Electric' })
+      .addTo(controller)
 
-    // // ビーム
-    // var tween = TweenMax.staggerTo('.energyBall_left',speed,{
-    //   borderRight: '26px solid transparent',
-    // })
-    // var scene3 = new ScrollMagic.Scene({
-    //   triggerElement: '.history_box3',
-    //   triggerHook: 'onLeave',
-    //   duration: 1000,
-    //   offset: 130,
-    //   reverse: true
-    // })
-    //   .setTween(tween)
-    //   .addIndicators({ name: 'Electric' })
-    //   .addTo(controller)
+    //ビーム回転
+    var tween = TweenMax.staggerTo('.energyBall_left',speed,{
+      rotation: 70,
+      width: '210px'
+    })
+    var scene3 = new ScrollMagic.Scene({
+      triggerElement: '.history_box3',
+      triggerHook: 'onLeave',
+      duration: 600,
+      offset: 1000,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'Electric' })
+      .addTo(controller)
+    //ビーム長さ調整
+    var tween = TweenMax.staggerTo('.energyBall_left',speed,{
+      repeat: 1,
+      yoyo: true,
+    })
+    var scene3 = new ScrollMagic.Scene({
+      triggerElement: '.history_box3',
+      triggerHook: 'onLeave',
+      duration: 600,
+      offset: 1000,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'Electric' })
+      .addTo(controller)
+
+    //ビーム終了
+    var tween = TweenMax.staggerTo('.energyBall_right,.energyBall_left',speed,{
+      opacity: 0,
+      width: '40px'
+    })
+    var scene3 = new ScrollMagic.Scene({
+      triggerElement: '.history_box3',
+      triggerHook: 'onLeave',
+      duration: 100,
+      offset: 1580,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'Electric' })
+      .addTo(controller)
+    //エネルギー弾__終了
+    var tween = TweenMax.staggerTo('.energyBall_right',speed,{
+      opacity: 0,
+    })
+    var scene3 = new ScrollMagic.Scene({
+      triggerElement: '.history_box3',
+      triggerHook: 'onLeave',
+      duration: 100,
+      offset: 1580,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'Electric' })
+      .addTo(controller)
 
     //インパクト__ダメージエフェクト__カラー
     var tween = TweenMax.staggerTo('.skill_impact  #impact',speed,{
@@ -992,7 +1095,7 @@ $(function () {
       triggerElement: '.history_box3',
       triggerHook: 'onLeave',
       duration: 500,
-      offset: 1714,
+      offset: 1681,
       reverse: true
     })
       .setPin('.history_box4')
@@ -1005,7 +1108,7 @@ $(function () {
     var scene2 = new ScrollMagic.Scene({
       triggerElement: '.history_box4',
       triggerHook: 'onLeave',
-      duration: 160,
+      duration: 120,
       offset: 130,
       reverse: true
     })
@@ -1110,7 +1213,7 @@ $(function () {
       triggerElement: '.history_box4',
       triggerHook: 'onLeave',
       duration: 500,
-      offset: 1714,
+      offset: 1681,
       reverse: true
     })
       .setPin('.history_box5')
@@ -1138,7 +1241,7 @@ $(function () {
     var scene2 = new ScrollMagic.Scene({
       triggerElement: '.history_box5',
       triggerHook: 'onLeave',
-      duration: 160,
+      duration: 120,
       offset: 130,
       reverse: true
     })
@@ -1287,7 +1390,7 @@ $(function () {
       triggerElement: '.history_box5',
       triggerHook: 'onLeave',
       duration: 500,
-      offset: 1714,
+      offset: 1681,
       reverse: true
     })
       .setPin('.history_box6')
@@ -1300,7 +1403,7 @@ $(function () {
     var scene2 = new ScrollMagic.Scene({
       triggerElement: '.history_box6',
       triggerHook: 'onLeave',
-      duration: 160,
+      duration: 120,
       offset: 130,
       reverse: true
     })
@@ -1348,7 +1451,7 @@ $(function () {
       triggerElement: '.history_box6',
       triggerHook: 'onLeave',
       duration: 320,
-      offset: 130,
+      offset: 290,
       reverse: true
     })
       .setTween(tween)
@@ -1374,8 +1477,8 @@ $(function () {
     var scene1 = new ScrollMagic.Scene({
       triggerElement: '.history_box6',
       triggerHook: 'onLeave',
-      duration: 2000,
-      offset: 1714,
+      duration: 3000,
+      offset: 1681,
       reverse: true
     })
       .setPin('.top_main_middle_products_box')
@@ -1383,7 +1486,7 @@ $(function () {
       .addTo(controller)
 
     var tween = TweenMax.staggerTo('.top_main_middle_products_box',speed,{
-        y: '-30px',
+        y: '-60px',
         repeat: 1,
         yoyo: true,
     })
@@ -1432,8 +1535,75 @@ $(function () {
       .setTween(tween2)
       .addIndicators({ name: 'products' })
       .addTo(controller)
+    
+    ////左__発光__1st
+    var tween = TweenMax.staggerTo('.portfolio_left_o',speed,{
+      repeat: 1,
+      yoyo: true,
+      color: ef_color,
+    })
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.top_main_middle_products_box',
+      triggerHook: 'onLeave',
+      duration: 200,
+      offset: 200,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: '中O' })
+      .addTo(controller)
+    //左__エネルギー弾__移動
+    var tween = TweenMax.staggerTo('.energyBall_right',speed,{
+      backgroundColor: ef_color,
+      scale: 1,
+      right: '338px',
+    })
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.top_main_middle_products_box',
+      triggerHook: 'onLeave',
+      duration: 1,
+      offset:200,
+      reverse: true
+    })
+    .setTween(tween)
+    .addIndicators({ name: '中O' })
+    .addTo(controller)
+    //左__エネルギー弾__発射準備
+    var tween = TweenMax.staggerTo('.energyBall_right',speed,{
+      backgroundColor: ef_color,
+      opacity: 1,
+      scale: 0.3,
+    })
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.top_main_middle_products_box',
+      triggerHook: 'onLeave',
+      duration: 160,
+      offset:201,
+      reverse: true
+    })
+    .setTween(tween)
+    .addIndicators({ name: '中O' })
+    .addTo(controller)
+
+    //左__エネルギー弾__発射中断
+    var tween = TweenMax.staggerTo('.energyBall_right',speed,{
+      backgroundColor: ef_color,
+      opacity: 0,
+      scale: 1,
+    })
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.top_main_middle_products_box',
+      triggerHook: 'onLeave',
+      duration: 160,
+      offset:1400,
+      reverse: true
+    })
+    .setTween(tween)
+    .addIndicators({ name: '中O' })
+    .addTo(controller)
+
     //Flいなくなる
-    var tween3 = TweenMax.staggerTo('.skill_fl',speed,{
+    var tween = TweenMax.staggerTo('.skill_fl',speed,{
       y: '-300px',
       opacity: 1,
     })
@@ -1444,9 +1614,80 @@ $(function () {
       offset: 435,
       reverse: true
     })
-      .setTween(tween3)
+      .setTween(tween)
       .addIndicators({ name: 'products' })
-      .addTo(controller) 
+      .addTo(controller)
+
+    var tween = TweenMax.staggerTo('.skill_fl',speed,{
+      y: '-290px',
+    })
+    var scene4 = new ScrollMagic.Scene({
+      triggerElement: '.top_main_middle_products_box',
+      triggerHook: 'onLeave',
+      duration: 65,
+      offset: 935,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
+    var tween = TweenMax.staggerTo('.skill_fl',speed,{
+      y: '-212px',
+    })
+    var scene4 = new ScrollMagic.Scene({
+      triggerElement: '.top_main_middle_products_box',
+      triggerHook: 'onLeave',
+      duration: 500,
+      offset: 1000,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
+    var tween = TweenMax.staggerTo('.skill_fl',speed,{
+      opacity: 0,
+    })
+    var scene4 = new ScrollMagic.Scene({
+      triggerElement: '.top_main_middle_products_box',
+      triggerHook: 'onLeave',
+      duration: 10,
+      offset: 1400,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
+    ////右__発光__1st
+    var tween = TweenMax.staggerTo('.portfolio_right_o',speed,{
+      zIndex: 11,
+    })
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.top_main_middle_products_box',
+      triggerHook: 'onLeave',
+      duration: 500,
+      offset: 1000,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: '右O' })
+      .addTo(controller)
+
+    var tween = TweenMax.staggerTo('.portfolio_right_o',speed,{
+      repeat: 1,
+      scale: 5,
+      yoyo: true,
+      color: ef_color,
+    })
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.top_main_middle_products_box',
+      triggerHook: 'onLeave',
+      duration: 500,
+      offset: 1000,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: '右O' })
+      .addTo(controller)
   });
 
 
