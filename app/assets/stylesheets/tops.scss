@@ -12,15 +12,19 @@
   box-sizing: border-box;
   list-style: none;
   color: var(--f_color);
-  font-weight: bold;
-  font-family:'arial-black',sans-serif;
 }
+body{
+  font-weight: bold;
+  font-family:"Arial Black","Hiragino Sans",sans-serif;
+  -webkit-appearance: none;
+  -webkit-text-size-adjust: 100%;
+}
+
 h1{
   font-weight: bold;
   display: inline-block;
   line-height: 60px;
   font-size: 60px;
-  font-family: "arial-black",sans-serif;
 }
 
 .top_main{
@@ -198,9 +202,7 @@ h1{
 .skills{
   position: relative;
   bottom: 10px;
-  display:flex;
-  font-family:'impact',sans-serif;
-  &_top{
+  display:flex;  &_top{
     width: 50%;
     justify-content: left;
   }
