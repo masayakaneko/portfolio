@@ -674,7 +674,7 @@ $(function () {
     var tween = TweenMax.staggerTo('.energyBall_right',speed,{
       backgroundColor: ef_color,
       opacity: 1,
-      right: '158px',
+      right: '159px',
     })
     var scene1 = new ScrollMagic.Scene({
       triggerElement: '.history_box3',
@@ -703,7 +703,7 @@ $(function () {
     .addIndicators({ name: '中O' })
     .addTo(controller)
     //ビーム登場
-    var tween = TweenMax.staggerTo('.energyBall_left',speed,{
+    var tween = TweenMax.staggerTo('.energyBeam',speed,{
       opacity: 1,
     })
     var scene3 = new ScrollMagic.Scene({
@@ -717,8 +717,8 @@ $(function () {
       .addIndicators({ name: 'Electric' })
       .addTo(controller)
     //ビーム発射
-    var tween = TweenMax.staggerTo('.energyBall_left',speed,{
-      width: '260px',
+    var tween = TweenMax.staggerTo('.energyBeam',speed,{
+      width: '880px',
     })
     var scene3 = new ScrollMagic.Scene({
       triggerElement: '.history_box3',
@@ -732,9 +732,9 @@ $(function () {
       .addTo(controller)
 
     //ビーム回転
-    var tween = TweenMax.staggerTo('.energyBall_left',speed,{
+    var tween = TweenMax.staggerTo('.energyBeam',speed,{
       rotation: 70,
-      width: '210px'
+      width: '780px',
     })
     var scene3 = new ScrollMagic.Scene({
       triggerElement: '.history_box3',
@@ -747,7 +747,7 @@ $(function () {
       .addIndicators({ name: 'Electric' })
       .addTo(controller)
     //ビーム長さ調整
-    var tween = TweenMax.staggerTo('.energyBall_left',speed,{
+    var tween = TweenMax.staggerTo('.energyBeam',speed,{
       repeat: 1,
       yoyo: true,
     })
@@ -763,9 +763,8 @@ $(function () {
       .addTo(controller)
 
     //ビーム終了
-    var tween = TweenMax.staggerTo('.energyBall_right,.energyBall_left',speed,{
+    var tween = TweenMax.staggerTo('.energyBall_right,.energyBeam',speed,{
       opacity: 0,
-      width: '40px'
     })
     var scene3 = new ScrollMagic.Scene({
       triggerElement: '.history_box3',
@@ -1546,7 +1545,7 @@ $(function () {
       triggerElement: '.top_main_middle_products_box',
       triggerHook: 'onLeave',
       duration: 200,
-      offset: 200,
+      offset: 600,
       reverse: true
     })
       .setTween(tween)
@@ -1578,7 +1577,7 @@ $(function () {
       triggerElement: '.top_main_middle_products_box',
       triggerHook: 'onLeave',
       duration: 160,
-      offset:201,
+      offset:600,
       reverse: true
     })
     .setTween(tween)

@@ -12,8 +12,17 @@
   box-sizing: border-box;
   list-style: none;
   color: var(--f_color);
-  font-family:'arial',sans-serif;
+  font-weight: bold;
+  font-family:'arial-black',sans-serif;
 }
+h1{
+  font-weight: bold;
+  display: inline-block;
+  line-height: 60px;
+  font-size: 60px;
+  font-family: "arial-black",sans-serif;
+}
+
 .top_main{
   width: 100%;
   height: 100%;
@@ -30,7 +39,6 @@
     &_name{
       margin-bottom: 1px;
       display: inline-block;
-      font-family:'arial-black',sans-serif;
       font-size: 15px;
     }
     &_switch{
@@ -59,56 +67,50 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
-    &_title{
-      height: 90px;
-      margin-top:52px;
-      margin-bottom: 10px;
-      .portfolio,
-      .portfolio_middle_o,
-      .portfolio_left_o,
-      .portfolio_right_o{
-        font-weight: bold;
+    .energyBall{
+      z-index: 10;
+      height: 40px;
+      width: 40px;
+      display: inline-block;
+    }
+    .energyBall_right{
+      display: inline-block;
+      background-color: var(--ef_color);
+      border-radius: 50%;
+      opacity: 0.2;
+      position: relative;
+      right: 45px;
+      bottom: 1px;
+      .energyBeam{
         display: inline-block;
-        margin-block-start: 0;
-        margin-block-end: 0;
-        line-height: 60px;
-        font-size: 60px;
-        font-family:"arial-black",sans-serif;
-      }
-      .energyBall{
-        position: relative;
-        z-index: 1;
-        display: inline-block;
-        height: 40px;
         width: 40px;
-        &_right{
-          background-color: var(--ef_color);
-          position: relative;
-          border-radius: 50%;
-          right: 45px;
-          bottom: 2px;
-          opacity:0;
-        }
-        &_left{
-          position: relative;
-          top: 13px;
-          left: 285px;
-          width: 40px;
-          height: 10px;
-          border-radius: 6px;
-          background: linear-gradient(90deg, var(--ef_color) 0%, var(--ef_color) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
-          transform-origin: 3px 5px;
-          background-color: var(--ef_color);
-          transform: rotate(-230deg);
-          z-index: 1;
-          opacity: 0;
-        }
+        height: 40px;
+        border-radius: 20px;
+        transform-origin: 20px 20px;
+        background-color: var(--ef_color);
+        transform: rotate(-230deg);
+        z-index: 1;
+        opacity: 0;
       }
-      .masayakaneko{
+    }
+    .energyBall_left{
+
+    }
+    &_title{
+      position: inline-block;
+      width: 480px;
+      height: 90px;
+      margin:  52px auto 10px auto;
+      .portfolio{
+        width: 480px;
+        height: 60px;
+      }
+      #titleName{
+        display: inline-block;
+        width: 480px;
+        height: 30px;
         line-height: 30px;
         font-size: 30px;
-        font-family:"arial-black",sans-serif;
       }
     }
     &_skills{
@@ -175,7 +177,6 @@
     background-color: var(--bg_color);
     display: inline-block;
     line-height:24px;
-    font-family:"arial-black",sans-serif;
   }
   .history_box_title{
     font-size: 22px;
@@ -183,7 +184,6 @@
     display: inline-block;
     line-height: 22px;
     font-weight: bold;
-    font-family: "arial-black",sans-serif;
   }
   ol{
     background-color: var(--bg_color);
