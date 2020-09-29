@@ -1617,7 +1617,7 @@ $(function () {
       .addTo(controller)
 
     var tween = TweenMax.staggerTo('.skill_fl',speed,{
-      y: '-290px',
+      y: '-330px',
     })
     var scene4 = new ScrollMagic.Scene({
       triggerElement: '.top_main_middle_products_box',
@@ -1630,7 +1630,7 @@ $(function () {
       .addIndicators({ name: 'products' })
       .addTo(controller)
     var tween = TweenMax.staggerTo('.skill_fl',speed,{
-      y: '-212px',
+      y: '-350px',
     })
     var scene4 = new ScrollMagic.Scene({
       triggerElement: '.top_main_middle_products_box',
@@ -1642,19 +1642,21 @@ $(function () {
       .setTween(tween)
       .addIndicators({ name: 'products' })
       .addTo(controller)
-    var tween = TweenMax.staggerTo('.skill_fl',speed,{
-      opacity: 0,
-    })
-    var scene4 = new ScrollMagic.Scene({
-      triggerElement: '.top_main_middle_products_box',
-      triggerHook: 'onLeave',
-      duration: 10,
-      offset: 1400,
-      reverse: true
-    })
-      .setTween(tween)
-      .addIndicators({ name: 'products' })
-      .addTo(controller)
+
+
+      var tween = TweenMax.staggerTo('.skill_fl',speed,{
+        opacity: 0,
+      })
+      var scene4 = new ScrollMagic.Scene({
+        triggerElement: '.top_main_middle_products_box',
+        triggerHook: 'onLeave',
+        duration: 10,
+        offset: 1400,
+        reverse: true
+      })
+        .setTween(tween)
+        .addIndicators({ name: 'products' })
+        .addTo(controller)
     ////右__発光__1st
     var tween = TweenMax.staggerTo('.portfolio_right_o',speed,{
       zIndex: 0,
@@ -1670,15 +1672,11 @@ $(function () {
       .addIndicators({ name: '右O' })
       .addTo(controller)
 
-    var tween = TweenMax.staggerTo('.large_o',speed,{
+    var tween = TweenMax.staggerTo('.portfolio_right_o',speed,{
       repeat: 1,
-      transformOrigin: 'center',
-      fontSize: '240px',
-      right: '60px',
-      bottom: '20px',
-      marginRight: '80px',
-
-      yoyo: true,
+      position: 'relative',
+      bottom: '100px',
+      yoyo: true, 
       color: ef_color,
     })
     var scene1 = new ScrollMagic.Scene({
@@ -1692,7 +1690,7 @@ $(function () {
       .addIndicators({ name: '右O' })
       .addTo(controller)
 
-      var tween = TweenMax.staggerTo('.large_o',speed,{
+      var tween = TweenMax.staggerTo('.portfolio_right_o',speed,{
         opacity: 1,
       })
       var scene1 = new ScrollMagic.Scene({
@@ -1705,7 +1703,6 @@ $(function () {
         .setTween(tween)
         .addIndicators({ name: '右O' })
         .addTo(controller)
-
   });
 
 
