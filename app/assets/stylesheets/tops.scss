@@ -1,5 +1,5 @@
 :root{
-  --bg_color: rgb(0, 0, 0);
+  --bg_color: rgb(0, 187, 255);
   --f_color: rgb(255, 255, 255);
   --ef_color: rgb(255, 255, 136);
   --ef_color2: rgb(255, 136, 136);
@@ -12,19 +12,23 @@
   box-sizing: border-box;
   list-style: none;
   color: var(--f_color);
+  -webkit-appearance: none;
+  -webkit-text-size-adjust: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 body{
   font-weight: bold;
   font-family:"Arial Black","Hiragino Sans",sans-serif;
-  -webkit-appearance: none;
-  -webkit-text-size-adjust: 100%;
 }
 
 h1{
+  height: 60px;
   font-weight: bold;
   display: inline-block;
   line-height: 60px;
   font-size: 60px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .top_main{
@@ -66,25 +70,46 @@ h1{
     }
   }
   &_upper{
+    z-index: 10;
     padding-top: 140px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     .energyBall{
+      margin: 12px 0 8px 0;
       z-index: 10;
       height: 40px;
       width: 40px;
       display: inline-block;
     }
+    .energyBall_left{
+      position: absolute;
+      background-color: var(--ef_color2);
+      border-radius: 50%;
+      opacity: 0;
+      top: 0;
+      bottom: 0;
+      left: 54px;
+    }
     .energyBall_right{
+      position: absolute;
+      background-color: var(--ef_color);
+      border-radius: 50%;
+      opacity: 0;
+      top: 0;
+      bottom: 0;
+      right: 12px;
+    }
+    .energyBall_middle{
       display: inline-block;
       background-color: var(--ef_color);
       border-radius: 50%;
-      opacity: 0.2;
-      position: relative;
-      right: 45px;
-      bottom: 1px;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 125px;
       .energyBeam{
         display: inline-block;
         width: 40px;
@@ -97,21 +122,30 @@ h1{
         opacity: 0;
       }
     }
-    .energyBall_left{
-
-    }
     &_title{
-      position: inline-block;
-      width: 480px;
+      width: 400px;
       height: 90px;
       margin:  52px auto 10px auto;
+      position: relative; 
       .portfolio{
-        width: 480px;
+        width: 400px;
         height: 60px;
+        &_right_o{
+          position: relative; 
+          .large_o{
+            z-index: 10;
+            font-size: 60px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+          }
+        }
       }
       #titleName{
         display: inline-block;
-        width: 480px;
+        width: 400px;
         height: 30px;
         line-height: 30px;
         font-size: 30px;
@@ -215,6 +249,7 @@ h1{
     justify-content: flex-end;
   }
   .skill{
+    z-index: 1;
     width: 65px;
     height: 70px;
     margin: 0px;

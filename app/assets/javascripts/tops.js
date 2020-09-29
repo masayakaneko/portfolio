@@ -671,10 +671,9 @@ $(function () {
       .addIndicators({ name: '中O' })
       .addTo(controller)
     //中__エネルギー弾__移動
-    var tween = TweenMax.staggerTo('.energyBall_right',speed,{
+    var tween = TweenMax.staggerTo('.energyBall_middle',speed,{
       backgroundColor: ef_color,
       opacity: 1,
-      right: '159px',
     })
     var scene1 = new ScrollMagic.Scene({
       triggerElement: '.history_box3',
@@ -687,7 +686,7 @@ $(function () {
     .addIndicators({ name: '中O' })
     .addTo(controller)
     //中__エネルギー弾__発射準備
-    var tween = TweenMax.staggerTo('.energyBall_right',speed,{
+    var tween = TweenMax.staggerTo('.energyBall_middle',speed,{
       backgroundColor: ef_color,
       opacity: 1,
       scale: 0.3,
@@ -763,7 +762,7 @@ $(function () {
       .addTo(controller)
 
     //ビーム終了
-    var tween = TweenMax.staggerTo('.energyBall_right,.energyBeam',speed,{
+    var tween = TweenMax.staggerTo('.energyBall_middle,.energyBeam',speed,{
       opacity: 0,
     })
     var scene3 = new ScrollMagic.Scene({
@@ -777,7 +776,7 @@ $(function () {
       .addIndicators({ name: 'Electric' })
       .addTo(controller)
     //エネルギー弾__終了
-    var tween = TweenMax.staggerTo('.energyBall_right',speed,{
+    var tween = TweenMax.staggerTo('.energyBall_middle',speed,{
       opacity: 0,
     })
     var scene3 = new ScrollMagic.Scene({
@@ -1552,7 +1551,7 @@ $(function () {
       .addIndicators({ name: '中O' })
       .addTo(controller)
     //左__エネルギー弾__移動
-    var tween = TweenMax.staggerTo('.energyBall_right',speed,{
+    var tween = TweenMax.staggerTo('.energyBall_left',speed,{
       backgroundColor: ef_color,
       scale: 1,
       right: '338px',
@@ -1568,7 +1567,7 @@ $(function () {
     .addIndicators({ name: '中O' })
     .addTo(controller)
     //左__エネルギー弾__発射準備
-    var tween = TweenMax.staggerTo('.energyBall_right',speed,{
+    var tween = TweenMax.staggerTo('.energyBall_left',speed,{
       backgroundColor: ef_color,
       opacity: 1,
       scale: 0.3,
@@ -1585,7 +1584,7 @@ $(function () {
     .addTo(controller)
 
     //左__エネルギー弾__発射中断
-    var tween = TweenMax.staggerTo('.energyBall_right',speed,{
+    var tween = TweenMax.staggerTo('.energyBall_left',speed,{
       backgroundColor: ef_color,
       opacity: 0,
       scale: 1,
@@ -1658,7 +1657,7 @@ $(function () {
       .addTo(controller)
     ////右__発光__1st
     var tween = TweenMax.staggerTo('.portfolio_right_o',speed,{
-      zIndex: 11,
+      zIndex: 0,
     })
     var scene1 = new ScrollMagic.Scene({
       triggerElement: '.top_main_middle_products_box',
@@ -1671,9 +1670,14 @@ $(function () {
       .addIndicators({ name: '右O' })
       .addTo(controller)
 
-    var tween = TweenMax.staggerTo('.portfolio_right_o',speed,{
+    var tween = TweenMax.staggerTo('.large_o',speed,{
       repeat: 1,
-      scale: 5,
+      transformOrigin: 'center',
+      fontSize: '240px',
+      right: '60px',
+      bottom: '20px',
+      marginRight: '80px',
+
       yoyo: true,
       color: ef_color,
     })
@@ -1687,6 +1691,21 @@ $(function () {
       .setTween(tween)
       .addIndicators({ name: '右O' })
       .addTo(controller)
+
+      var tween = TweenMax.staggerTo('.large_o',speed,{
+        opacity: 1,
+      })
+      var scene1 = new ScrollMagic.Scene({
+        triggerElement: '.top_main_middle_products_box',
+        triggerHook: 'onLeave',
+        duration: 1,
+        offset: 1000,
+        reverse: true
+      })
+        .setTween(tween)
+        .addIndicators({ name: '右O' })
+        .addTo(controller)
+
   });
 
 
