@@ -1643,6 +1643,20 @@ $(function () {
       .addIndicators({ name: 'products' })
       .addTo(controller)
 
+      var tween = TweenMax.staggerTo('#fl,.skill_fl p',speed,{
+        borderColor: ef_color2,
+        color: ef_color2,
+      })
+      var scene4 = new ScrollMagic.Scene({
+        triggerElement: '.top_main_middle_products_box',
+        triggerHook: 'onLeave',
+        duration: 100,
+        offset: 1300,
+        reverse: true
+      })
+        .setTween(tween)
+        .addIndicators({ name: 'products' })
+        .addTo(controller)
 
       var tween = TweenMax.staggerTo('.skill_fl',speed,{
         opacity: 0,
