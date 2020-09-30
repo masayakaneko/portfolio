@@ -72,13 +72,13 @@ $(function () {
 
     var tween = TweenMax.staggerTo('.ball',speed,{
       opacity: 0,
-      display: 'none',
+      height: 0,
     })
     var scene3 = new ScrollMagic.Scene({
       triggerElement: '.top_main_middle_history',
       triggerHook: 'onLeave',
-      duration: 200,
-      offset: 2000,
+      duration: 10,
+      offset: 1900,
       reverse: true
     })
       .setTween(tween)
