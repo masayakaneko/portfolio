@@ -28,7 +28,7 @@ $(function () {
   });
     const controller = new ScrollMagic.Controller()
     // アニメーションスピード
-    const speed = 0.3
+    const speed = 1
     // タイトルとスキルボックス
     var tween = TweenMax.staggerTo('.top_main_upper',speed,{
       y: '-80px',
@@ -77,8 +77,8 @@ $(function () {
     var scene3 = new ScrollMagic.Scene({
       triggerElement: '.top_main_middle_history',
       triggerHook: 'onLeave',
-      duration: 10,
-      offset: 1900,
+      duration: 100,
+      offset: 2100,
       reverse: true
     })
       .setTween(tween)

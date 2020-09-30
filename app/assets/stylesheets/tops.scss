@@ -176,6 +176,9 @@ h1{
           animation: ball 0.6s alternate infinite;
           -webkit-animation: ball 0.6s alternate infinite;
           -moz-animation: ball 0.6s alternate infinite;
+          h3{
+            color: var(--ef_color);
+          }
         }
         @keyframes ball{
             0%   { transform:translate(0%, 60px) rotateX(25deg); }
