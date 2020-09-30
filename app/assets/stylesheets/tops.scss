@@ -12,10 +12,11 @@
   box-sizing: border-box;
   list-style: none;
   color: var(--f_color);
-  // font-family:'Arial Black','Hiragino Sans',sans-serif;
+  font-weight: black;
+  font-family:'Arial Black','Arial','Hiragino Sans',sans-serif;
 }
 body{
-  font-weight: bold;
+  font-weight: black;
   font-family:'Arial Black';
   -webkit-appearance: none;
   -webkit-text-size-adjust: 100%;
@@ -23,12 +24,6 @@ body{
   -webkit-backface-visibility: hidden;
 
 }
-// body div:nth-of-type(){
-
-//   color:transparent;
-//   opacity: 0;
-
-// }
 body div:nth-child(n+5){
       opacity: 0;
 }
