@@ -13,10 +13,9 @@
   list-style: none;
   color: var(--f_color);
   font-weight: bold;
-  font-family:'Arial Black','Arial','Hiragino Sans',sans-serif;
+  font-family:'ヒラギノ角ゴ Std W8';
 }
 body{
-
   -webkit-appearance: none;
   -webkit-text-size-adjust: 100%;
   backface-visibility: hidden;
@@ -32,8 +31,9 @@ h1{
   font-weight: bold;
   display: inline-block;
   line-height: 60px;
-  font-size: 60px;
+  font-size: 58px;
   -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
 }
 
 .top_main{
@@ -95,7 +95,7 @@ h1{
       opacity: 0;
       top: 0;
       bottom: 0;
-      left: 54px;
+      left: 53px;
     }
     .energyBall_right{
       position: absolute;
@@ -104,7 +104,7 @@ h1{
       opacity: 0;
       top: 0;
       bottom: 0;
-      right: 12px;
+      right: 11px;
     }
     .energyBall_middle{
       display: inline-block;
@@ -114,7 +114,7 @@ h1{
       position: absolute;
       top: 0;
       bottom: 0;
-      right: 125px;
+      right: 123px;
       .energyBeam{
         display: inline-block;
         width: 40px;
@@ -308,13 +308,13 @@ h1{
 #ps,#ai,#fl{
   border: 3px solid var(--f_color);
   p{
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 #js{
   border: 3px solid var(--f_color);
   p{
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 #pscc,#aicc{
@@ -343,11 +343,11 @@ h1{
       color: var(--bg_color);
     }
     &-html5{
-      font-size:28px;
+      font-size:30px;
       color: var(--bg_color);
     }
     &-css3-alt{
-      font-size:28px;
+      font-size:30px;
       color: var(--bg_color);
     }
     &-gem{

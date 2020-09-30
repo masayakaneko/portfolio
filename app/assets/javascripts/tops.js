@@ -1148,7 +1148,7 @@ $(function () {
     var tween = TweenMax.staggerTo('.skill_aicc, #aicc p',speed,{
       display:'block',
       opacity: 1,
-      fontSize: '24px',
+      fontSize: '22px',
 
     })
     var scene3 = new ScrollMagic.Scene({
@@ -1327,7 +1327,7 @@ $(function () {
     // pscc アイコン出現
     var tween = TweenMax.staggerTo('.skill_pscc, #pscc p',speed,{
       display:'block',
-      fontSize: '24px',
+      fontSize: '22px',
     })
     var scene3 = new ScrollMagic.Scene({
       triggerElement: '.history_box5',
