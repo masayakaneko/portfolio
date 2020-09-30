@@ -24,7 +24,7 @@ body{
   -webkit-backface-visibility: hidden;
 }
 body div:nth-child(n+5){
-      opacity: 0;
+  opacity: 0;
 }
 
 h1{
@@ -235,29 +235,29 @@ h1{
   position: relative;
   bottom: 10px;
   display:flex;  
+  .ball{
+    margin-top: 50px;
+    opacity: 1;
+    animation: ball 0.6s alternate infinite;
+    -webkit-animation: ball 0.6s alternate infinite;
+    -moz-animation: ball 0.6s alternate infinite;
+  }
+  @keyframes ball{
+      0%   { transform:translate(0%, 0%) rotateX(25deg); }
+      100% { transform:translate(0%, -50px); }
+  }
+  @-webkit-keyframes ball{
+      0%   { -webkit-transform:translate(0%, 0%) rotateX(25deg); }
+      100% { -webkit-transform:translate(0%, -50px); }
+  }
+  
+  @-moz-keyframes ball{
+      0%   { -moz-transform:translate(0%, 0%) rotateX(25deg); }
+      100% { -moz-transform:translate(0%, -50px); }
+  }
   &_top{
     width: 50%;
     justify-content: left;
-    .ball{
-      margin-top: 50px;
-      opacity: 1;
-      animation: ball 0.6s alternate infinite;
-      -webkit-animation: ball 0.6s alternate infinite;
-      -moz-animation: ball 0.6s alternate infinite;
-    }
-    @keyframes ball{
-        0%   { transform:translate(0%, 0%) rotateX(25deg); }
-        100% { transform:translate(0%, -50px); }
-    }
-    @-webkit-keyframes ball{
-        0%   { -webkit-transform:translate(0%, 0%) rotateX(25deg); }
-        100% { -webkit-transform:translate(0%, -50px); }
-    }
-    
-    @-moz-keyframes ball{
-        0%   { -moz-transform:translate(0%, 0%) rotateX(25deg); }
-        100% { -moz-transform:translate(0%, -50px); }
-    }
   }
   &_middle{
     width: 50%;
