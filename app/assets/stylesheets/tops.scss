@@ -13,7 +13,7 @@
   list-style: none;
   color: var(--f_color);
   font-weight: bold;
-  font-family:'ヒラギノ角ゴ Std W6';
+  font-family:'Arial','ヒラギノ角ゴ Std W6',sans-serif;
 }
 body{
 
@@ -96,7 +96,7 @@ h1{
       opacity: 0;
       top: 0;
       bottom: 0;
-      left: 59px;
+      left: 68px;
     }
     .energyBall_right{
       position: absolute;
@@ -105,7 +105,7 @@ h1{
       opacity: 0;
       top: 0;
       bottom: 0;
-      right: 17px;
+      right: 28px;
     }
     .energyBall_middle{
       display: inline-block;
@@ -115,7 +115,7 @@ h1{
       position: absolute;
       top: 0;
       bottom: 0;
-      right: 124px;
+      right: 128px;
       .energyBeam{
         display: inline-block;
         width: 40px;
