@@ -41,6 +41,7 @@ $(function () {
       reverse: true
     })
       .setTween(tween)
+      .addIndicators({ name: ''})
       .addTo(controller)
 
 ////【-- HISTORY --】
@@ -63,6 +64,21 @@ $(function () {
       triggerHook: 'onLeave',
       duration: 100,
       offset: 707,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'ヒストリー透過' })
+      .addTo(controller)
+
+    var tween = TweenMax.staggerTo('.ball',speed,{
+      opacity: 0,
+      display: 'none',
+    })
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.top_main_middle_history',
+      triggerHook: 'onLeave',
+      duration: 200,
+      offset: 2000,
       reverse: true
     })
       .setTween(tween)
@@ -1688,7 +1704,7 @@ $(function () {
     var tween = TweenMax.staggerTo('.portfolio_right_o',speed,{
       repeat: 1,
       position: 'relative',
-      bottom: '100px',
+      bottom: '80px',
       yoyo: true, 
       color: ef_color,
     })
