@@ -166,9 +166,13 @@ h1{
         border-radius: 20px;
         height: 160px;
         width: 400px;
+        position: relative;
         .ball{
-          position: relative;
-          margin-top: 50px;
+          position: absolute;
+          top: 80px;
+          bottom: 0;
+          right: 0;
+          left: 0;
           opacity: 1;
           animation: ball 0.6s alternate infinite;
           -webkit-animation: ball 0.6s alternate infinite;
