@@ -16,14 +16,12 @@
   font-family:'Arial Black','Arial','Hiragino Sans',sans-serif;
 }
 body{
-  width: 440px;
   font-weight: black;
   font-family:'Arial Black';
   -webkit-appearance: none;
   -webkit-text-size-adjust: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-
 }
 body div:nth-child(n+5){
       opacity: 0;
