@@ -74,7 +74,7 @@ $(function () {
       opacity: 0,
       display: 'none',
     })
-    var scene2 = new ScrollMagic.Scene({
+    var scene3 = new ScrollMagic.Scene({
       triggerElement: '.top_main_middle_history',
       triggerHook: 'onLeave',
       duration: 200,
