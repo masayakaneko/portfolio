@@ -13,7 +13,7 @@
   list-style: none;
   color: var(--f_color);
   font-weight: bold;
-  font-family:'Arial Black','Hiragino Sans',sans-serif;
+  font-family:'Arial Black','Arial','Hiragino Sans',sans-serif;
 }
 body{
 
@@ -308,6 +308,12 @@ h1{
 #ps,#ai,#fl{
   border: 3px solid var(--f_color);
   p{
+    font-size: 20px;
+  }
+}
+#js{
+  border: 3px solid var(--f_color);
+  p{
     font-size: 22px;
   }
 }
@@ -318,7 +324,7 @@ h1{
   align-items: center;
   p{
     color: var(--bg_color);
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 #triangle,#cymb,#drum,#impact,#sander,#jigsaw,#hammerdrill,#sabersaw,#html,#css,#js,#ruby,#rails,#mysql,#wp,#aws,#gh{
