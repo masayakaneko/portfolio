@@ -4,7 +4,9 @@
   --ef_color: rgb(255, 255, 136);
   --ef_color2: rgb(255, 136, 136);
 }
-
+.addIndicators{
+  display: none
+}
 *{
   margin: 0 auto;
   padding: 0;
@@ -12,14 +14,15 @@
   box-sizing: border-box;
   list-style: none;
   color: var(--f_color);
+  font-family:'Arial Black','Hiragino Sans',sans-serif;
+}
+body{
+  font-weight: bold;
+  font-family:'Arial Black';
   -webkit-appearance: none;
   -webkit-text-size-adjust: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-}
-body{
-  font-weight: bold;
-  font-family:"Arial Black","Hiragino Sans",sans-serif;
 }
 
 h1{
@@ -266,7 +269,7 @@ h1{
       font-weight: bold;
       font-size: 24px;
       p{
-        font-family:'impact',sans-serif;
+        font-family: 'Impact';
       }
     }
     &_name{

@@ -41,7 +41,6 @@ $(function () {
       reverse: true
     })
       .setTween(tween)
-      .addIndicators({ name: 'タイトル&スキルボックス' })
       .addTo(controller)
 
 ////【-- HISTORY --】
