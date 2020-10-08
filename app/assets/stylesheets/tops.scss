@@ -306,6 +306,40 @@ h1{
     }
   }
 }
+.products{
+  position: relative;
+  bottom: 10px;
+  display:flex;  
+  &_top{
+    width: 50%;
+    justify-content: left;
+  }
+  .product{
+    z-index: 1;
+    width: 65px;
+    height: 70px;
+    margin: 0px;
+    opacity: 1;
+    &_icon{
+      box-sizing: border-box;
+      display: inline-block;
+      border-radius: 4px;
+      text-align: center;
+      align-items: center;
+      line-height: 44px;
+      width: 50px;
+      height: 50px;
+      background-color: var(--bg_color);
+      color: var(--f_color);
+      font-weight: bold;
+      font-size: 24px;
+    }
+    &_name{
+      font-size: 10px;
+      font-weight: bold;
+    }
+  }
+}
 #ps,#ai,#fl{
   border: 3px solid var(--f_color);
   p{
@@ -328,13 +362,57 @@ h1{
     font-size: 20px;
   }
 }
-#triangle,#cymb,#drum,#impact,#sander,#jigsaw,#hammerdrill,#sabersaw,#html,#css,#js,#ruby,#rails,#mysql,#wp,#aws,#gh{
+#furima:active{
+  .fa-box-open{
+    color: #ea352d;
+  }
+}
+#furima:hover{
+  .fa-box-open{
+    color: #ea352d;
+  }
+}
+#line:active{
+  .fa-line{
+    color: #1dcd00;
+  }
+}
+#line:hover{
+  .fa-line{
+    color: #1dcd00;
+  }
+}
+#othello:active{
+  .fa-th-large{
+    color: #282;
+  }
+}
+#othello:hover{
+  .fa-th-large{
+    color: #282;
+  }
+}
+#othello,#furima,#line,#triangle,#cymb,#drum,#impact,#sander,#jigsaw,#hammerdrill,#sabersaw,#html,#css,#js,#ruby,#rails,#mysql,#wp,#aws,#gh{
   background-color: var(--f_color);
   border: 3px solid var(--f_color);
   display: flex;
   align-items: center;
-  
+
   .fa{
+    &-th-large{
+      font-size:28px;
+      color: var(--bg_color);
+    }
+
+    &-box-open{
+      font-size:28px;
+      color: var(--bg_color);
+    }
+    &-line{
+      font-size:36px;
+      font-weight: normal;
+      color: var(--bg_color);
+    }
     &-bolt{
       font-size:28px;
       color: var(--bg_color);
