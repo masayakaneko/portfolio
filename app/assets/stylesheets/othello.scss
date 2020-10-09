@@ -1,0 +1,305 @@
+.main{
+  background-color: #ccc;
+  box-sizing: border-box;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  .player-wrapper{
+    margin-top: 20px;
+  }
+}
+.pageTop{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #ccc;
+  opacity: 0.9;
+  z-index: 10;
+  padding-top: 105px;
+  position: fixed;
+  .title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 54px;
+  }
+  h1{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 80px;
+    color: #000;
+  }
+}
+
+//トップページのボタン
+.nameBox{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom:30px;
+  opacity: 1;
+}
+.changeBtn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom:140px;
+  opacity: 1;
+}
+.gameStartBtn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom:50px;
+  opacity: 1;
+}
+
+input{
+  background-color: gray;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  opacity: 1;
+  border: none;
+  border-radius: 5px;
+  outline:none;
+  font-weight: normal;
+  font-weight: bold;
+}
+.inputNameBlack{
+  margin-right: 50px;
+  color:white;
+  background-color: black;
+}
+.inputNameWhite{
+  color: black;
+  background-color: white;
+}
+.gameBtn{
+  display: flex;
+  justify-content: space-between;
+}
+.changeButton{
+  background-color: rgb(52, 170, 52);
+  border-radius: 5px;
+  width: 250px;
+  height: 50px;
+}
+.startButton{
+  background-color: rgb(52, 170, 52);
+  color: white;
+  border-radius: 5px;
+  width: 350px;
+  height: 110px;
+}
+button{
+  display: block;
+  border: none;
+  outline:none;
+  width: 200px;
+  height: 50px;
+  width: 200px;
+}
+.gameBtn{
+  display: flex;
+  justify-content: center;
+}
+.Start{
+  width: 100px;
+  height:100px;
+}
+
+.underBtn{
+  width: 450px;
+  height: 50px;
+  display: flex;
+  .resetBtn{
+    display: inline-block;
+    width: 200px;
+  }
+}
+
+.wrapper{
+  height: 100vh;
+  width: 100vw;
+  background-color: #cccccc;
+  background-size: cover;
+}
+
+//-----------オセロ盤-------------
+
+.wrap{
+  position: relative;
+  width: 470px;
+  margin: 0 auto;
+}
+
+.gameBoard{
+  margin-top: 30px;
+  background-color: black;
+  padding: 30px 30px 30px 30px;
+  border-radius: 10px;
+  .resetBtn{
+    background-color: red;
+    border-radius:50%;
+    width:30px;
+    height:30px;
+    margin-left: 0;
+  }
+  .time{
+    background-color: rgb(52, 170, 52);
+    color: darkgreen;
+    width: 150px;
+    margin-bottom:30px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .grid-item:nth-child(n+5){
+    opacity: 1;
+  }
+  .grid-container{
+    margin-top: 30px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-rows: repeat(8, 50px);
+    grid-template-columns: repeat(8, 50px);
+    background-color: black;
+    // background: linear-gradient(to bottom left,black 50%, rgb(15, 15, 15) 50%);
+    .grid-item{
+      background-color: green;
+      font-size: 80px;
+      line-height: 40px;
+      text-align: center;
+      cursor: pointer;
+      margin:0;
+      padding: 0;
+    }
+    .grid-item:hover{
+      background-color:rgb(52, 170, 52);
+    }
+  }
+}
+//置いた時のアニメーション
+.grid-item.black,
+.grid-item.white{
+  animation: animation 0.1s linear 0s normal;
+}
+@keyframes animation{
+  0% {
+    z-index: 1;
+    font-size: 100px;
+  }
+  100% {
+    z-index: 0;
+    font-size: 80px;
+  }
+}
+
+
+.white{
+  color: white;
+  pointer-events: none;
+  text-shadow: 0px 1px #000000;
+}
+.black{
+  color: black;
+  pointer-events: none;
+  text-shadow: 0px 1px #ffffff;
+}
+  //---------プレイヤー機能----------
+
+.player-wrapper{
+  margin:0 auto;
+  height: 120px;
+  width: 470px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+#playerName{
+  font-size: 20px;
+}
+
+#whiteCounter,
+#blackCounter{
+  margin-top:2px;
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 60px;
+}
+.player-white{
+  // border: 5px solid gray;
+  text-align: center;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  background-color: #dcdcdc;
+  transition: 0.1s;
+}
+.player-black{
+  // border: 5px solid gray;
+  text-align: center;
+  border-radius: 10px;
+  width: 200px;
+  height: 100px;
+  color:gray;
+  background-color: #333333;
+  transition: 0.1s;
+  
+}
+.player-white.turnPlayer{
+  padding-top: 5px;
+  width: 200px;
+  height: 110px;
+  // border: 5px solid yellow;
+  background-color: white;
+  transition: 0.1s;
+  #playerName,#whiteCounter{
+    color:black;
+  }
+}
+.player-black.turnPlayer{
+  padding-top: 5px;
+  color: white;
+  width: 200px;
+  height: 110px;
+  background-color: black;
+  transition: 0.1s;
+}
+
+.pass-btn{
+  margin: 10px;
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height:  82px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+}
+.pass-btn.turnBlack{
+  border-radius: 50px;
+  color: white;
+  background-color: black;
+}
+.pass-btn:active{
+  display: block;
+  margin: 0 35px;
+  width: 30px;
+  height: 80px;
+  font-size: 0px;
+  border-radius: 0;
+  background:linear-gradient(270deg,white 0%, white 50%, black 50%, black 100%);
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+

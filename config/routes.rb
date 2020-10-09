@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
- root to: 'tops#index'
+  get 'tops/othello' => 'tops#othello'
+  root to: 'tops#index'
 end
