@@ -26,6 +26,7 @@ $(function () {
       i--
     }
   });
+
     const controller = new ScrollMagic.Controller()
     // アニメーションスピード
     const speed = 1
@@ -114,6 +115,40 @@ $(function () {
     .addIndicators({ name: 'box1透過' })
     .addTo(controller)
 
+    // レベルアップ
+    var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
+      borderColor: ef_color,
+      repeat: 1,
+      yoyo: true
+    })
+    var tween2 = TweenMax.staggerTo('.top_main_upper_skills_box h2',speed,{
+      color: ef_color,
+      repeat: 1,
+      yoyo: true
+    })
+    
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.history_box1',
+      triggerHook: 'onLeave',
+      duration: 200,
+      offset: 210,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
+
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.history_box1',
+      triggerHook: 'onLeave',
+      duration: 200,
+      offset: 210,
+      reverse: true
+    })
+      .setTween(tween2)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
+    
     //エンカウント楽器
     var tween = TweenMax.staggerTo('.skill_triangle,.skill_cymb,.skill_drum',speed,{
       display:'block',
@@ -575,9 +610,42 @@ $(function () {
       offset: 1681,
       reverse: true
     })
+    .setPin('.history_box2')
+    .addIndicators({ name: 'ヒストリー2' })
+    .addTo(controller)
+
+    // レベルアップ
+    var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
+      borderColor: ef_color,
+      repeat: 1,
+      yoyo: true
+    })
+    var tween2 = TweenMax.staggerTo('.top_main_upper_skills_box h2',speed,{
+      color: ef_color,
+      repeat: 1,
+      yoyo: true
+    })
     
-      .setPin('.history_box2')
-      .addIndicators({ name: 'ヒストリー2' })
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.history_box2',
+      triggerHook: 'onLeave',
+      duration: 160,
+      offset: 210,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
+
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.history_box2',
+      triggerHook: 'onLeave',
+      duration: 160,
+      offset: 210,
+      reverse: true
+    })
+      .setTween(tween2)
+      .addIndicators({ name: 'products' })
       .addTo(controller)
 
     var tween = TweenMax.staggerTo('.history_box2',speed,{
@@ -624,6 +692,41 @@ $(function () {
       .setPin('.history_box3')
       .addIndicators({ name: 'ヒストリー3' })
       .addTo(controller)
+
+    // レベルアップ
+    var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
+      borderColor: ef_color,
+      repeat: 1,
+      yoyo: true
+    })
+    var tween2 = TweenMax.staggerTo('.top_main_upper_skills_box h2',speed,{
+      color: ef_color,
+      repeat: 1,
+      yoyo: true
+    })
+    
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.history_box3',
+      triggerHook: 'onLeave',
+      duration: 200,
+      offset: 210,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
+
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.history_box3',
+      triggerHook: 'onLeave',
+      duration: 200,
+      offset: 210,
+      reverse: true
+    })
+      .setTween(tween2)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
+
     var tween = TweenMax.staggerTo('.history_box3',speed,{
       opacity: 0
     })
@@ -1115,6 +1218,40 @@ $(function () {
       .addIndicators({ name: 'ヒストリー4' })
       .addTo(controller)
 
+    // レベルアップ
+    var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
+      borderColor: ef_color,
+      repeat: 1,
+      yoyo: true
+    })
+    var tween2 = TweenMax.staggerTo('.top_main_upper_skills_box h2',speed,{
+      color: ef_color,
+      repeat: 1,
+      yoyo: true
+    })
+    
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.history_box4',
+      triggerHook: 'onLeave',
+      duration: 200,
+      offset: 210,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
+
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.history_box4',
+      triggerHook: 'onLeave',
+      duration: 200,
+      offset: 210,
+      reverse: true
+    })
+      .setTween(tween2)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
+
     var tween = TweenMax.staggerTo('.history_box4',speed,{
       opacity: 0
     })
@@ -1260,6 +1397,40 @@ $(function () {
     })
     .setTween(tween)
       .addIndicators({ name: 'box5透過' })
+      .addTo(controller)
+
+    // レベルアップ
+    var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
+      borderColor: ef_color,
+      repeat: 1,
+      yoyo: true
+    })
+    var tween2 = TweenMax.staggerTo('.top_main_upper_skills_box h2',speed,{
+      color: ef_color,
+      repeat: 1,
+      yoyo: true
+    })
+    
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.history_box5',
+      triggerHook: 'onLeave',
+      duration: 160,
+      offset: 210,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
+
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.history_box5',
+      triggerHook: 'onLeave',
+      duration: 160,
+      offset: 210,
+      reverse: true
+    })
+      .setTween(tween2)
+      .addIndicators({ name: 'products' })
       .addTo(controller)
 
       var tween = TweenMax.staggerTo('.skill_html,.skill_css,.skill_wp',speed,{
@@ -1423,6 +1594,75 @@ $(function () {
       .setTween(tween)
       .addIndicators({ name: 'box6透過' })
       .addTo(controller)
+
+    // レベルアップ
+    var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
+      borderColor: ef_color,
+      repeat: 1,
+      yoyo: true
+    })
+    var tween2 = TweenMax.staggerTo('.top_main_upper_skills_box h2',speed,{
+      color: ef_color,
+      repeat: 1,
+      yoyo: true
+    })
+    
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.history_box4',
+      triggerHook: 'onLeave',
+      duration: 160,
+      offset: 210,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
+
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.history_box4',
+      triggerHook: 'onLeave',
+      duration: 160,
+      offset: 210,
+      reverse: true
+    })
+      .setTween(tween2)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
+      
+    // レベルアップ
+    var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
+      borderColor: ef_color,
+      repeat: 1,
+      yoyo: true
+    })
+    var tween2 = TweenMax.staggerTo('.top_main_upper_skills_box h2',speed,{
+      color: ef_color,
+      repeat: 1,
+      yoyo: true
+    })
+    
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.history_box6',
+      triggerHook: 'onLeave',
+      duration: 200,
+      offset: 210,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
+
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.history_box6',
+      triggerHook: 'onLeave',
+      duration: 200,
+      offset: 210,
+      reverse: true
+    })
+      .setTween(tween2)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
+
     //出現
     var tween = TweenMax.staggerTo('.skill_js,.skill_js,.skill_ruby,.skill_rails,.skill_mysql,.skill_aws,.skill_gh',speed,{
       display:'block',
@@ -1548,7 +1788,48 @@ $(function () {
       .setTween(tween2)
       .addIndicators({ name: 'products' })
       .addTo(controller)
-    
+
+    //プロダクト
+    var tween = TweenMax.staggerTo('.product',speed,{
+      y: '-200px',
+    })
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.top_main_middle_products_box',
+      triggerHook: 'onLeave',
+      duration: 100,
+      offset: 435,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
+    var tween = TweenMax.staggerTo('.product',speed,{
+      opacity: 1,
+    })
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.top_main_middle_products_box',
+      triggerHook: 'onLeave',
+      duration: 100,
+      offset: 535,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
+    var tween = TweenMax.staggerTo('.product',speed,{
+      y: '0',
+    })
+    var scene1 = new ScrollMagic.Scene({
+      triggerElement: '.top_main_middle_products_box',
+      triggerHook: 'onLeave',
+      duration: 200,
+      offset: 735,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
+
     ////左__発光__1st
     var tween = TweenMax.staggerTo('.portfolio_left_o',speed,{
       repeat: 1,

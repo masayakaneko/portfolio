@@ -34,7 +34,7 @@
 
 //トップページのボタン
 .nameBox{
-  width: 100%;
+  width: 480px;
   display: flex;
   justify-content: center;
   margin-bottom:30px;
@@ -167,9 +167,10 @@ button{
     background-color: black;
     // background: linear-gradient(to bottom left,black 50%, rgb(15, 15, 15) 50%);
     .grid-item{
+      font-family:'ヒラギノ角ゴ Std W6',sans-serif;
       background-color: green;
-      font-size: 80px;
-      line-height: 40px;
+      font-size: 50px;
+      line-height: 50px;
       text-align: center;
       cursor: pointer;
       margin:0;
@@ -192,7 +193,7 @@ button{
   }
   100% {
     z-index: 0;
-    font-size: 80px;
+    font-size: 50px;
   }
 }
 
@@ -230,6 +231,7 @@ button{
   font-weight: bold;
   line-height: 60px;
 }
+
 .player-white{
   // border: 5px solid gray;
   text-align: center;
@@ -238,6 +240,9 @@ button{
   height: 100px;
   background-color: #dcdcdc;
   transition: 0.1s;
+  #playerName,#whiteCounter{
+    color:#333;
+  }
 }
 .player-black{
   // border: 5px solid gray;
