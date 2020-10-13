@@ -1950,8 +1950,8 @@ $(function () {
       .addTo(controller)
 
       var tween = TweenMax.staggerTo('#fl,.skill_fl p',speed,{
-        borderColor: ef_color2,
-        color: ef_color2,
+        borderColor: ef_color,
+        color: ef_color,
       })
       var scene4 = new ScrollMagic.Scene({
         triggerElement: '.top_main_middle_products_box',
