@@ -56,6 +56,22 @@ $(function () {
       .setPin('.top_main_middle_history')
       .addIndicators({ name: 'ヒストリー' })
       .addTo(controller)
+    //浮かぶ
+    var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
+      boxShadow: '0px 2px 2px 2px   rgba(0,0,0,0.1)',
+      repeat: 1,
+      yoyo: true
+    })
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.top_main_middle_history',
+      triggerHook: 'onLeave',
+      duration: 180,
+      offset: 650,
+      reverse: true
+    })
+    .setTween(tween)
+    .addIndicators({ name: 'box1透過' })
+    .addTo(controller)
 
     var tween = TweenMax.staggerTo('.top_main_middle_history h2',speed,{
         opacity: 0
@@ -114,7 +130,22 @@ $(function () {
     .setTween(tween)
     .addIndicators({ name: 'box1透過' })
     .addTo(controller)
-
+    //浮かぶ
+    var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
+      boxShadow: '0px 2px 2px 2px   rgba(0,0,0,0.1)',
+      repeat: 1,
+      yoyo: true
+    })
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.history_box1',
+      triggerHook: 'onLeave',
+      duration: 220,
+      offset: 40,
+      reverse: true
+    })
+    .setTween(tween)
+    .addIndicators({ name: 'box1透過' })
+    .addTo(controller)
     // レベルアップ
     var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
       borderColor: ef_color,
@@ -613,7 +644,22 @@ $(function () {
     .setPin('.history_box2')
     .addIndicators({ name: 'ヒストリー2' })
     .addTo(controller)
-
+    //浮かぶ
+    var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
+      boxShadow: '0px 2px 2px 2px   rgba(0,0,0,0.1)',
+      repeat: 1,
+      yoyo: true
+    })
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.history_box2',
+      triggerHook: 'onLeave',
+      duration: 220,
+      offset: 40,
+      reverse: true
+    })
+    .setTween(tween)
+    .addIndicators({ name: 'box1透過' })
+    .addTo(controller)
     // レベルアップ
     var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
       borderColor: ef_color,
@@ -692,7 +738,22 @@ $(function () {
       .setPin('.history_box3')
       .addIndicators({ name: 'ヒストリー3' })
       .addTo(controller)
-
+    //浮かぶ
+    var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
+      boxShadow: '0px 2px 2px 2px   rgba(0,0,0,0.1)',
+      repeat: 1,
+      yoyo: true
+    })
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.history_box3',
+      triggerHook: 'onLeave',
+      duration: 220,
+      offset: 40,
+      reverse: true
+    })
+    .setTween(tween)
+    .addIndicators({ name: 'box1透過' })
+    .addTo(controller)
     // レベルアップ
     var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
       borderColor: ef_color,
@@ -836,6 +897,8 @@ $(function () {
     //低空飛行
     var tween = TweenMax.staggerTo('#ps,#ai,#fl',speed,{
       boxShadow: 'none',
+      position: 'relative',
+      top: '1px',
     })
     var scene1 = new ScrollMagic.Scene({
       triggerElement: '.history_box3',
@@ -924,6 +987,8 @@ $(function () {
     //低空飛行終了
     var tween = TweenMax.staggerTo('#ps,#ai,#fl',speed,{
       boxShadow: '0px 2px 2px 2px   rgba(0,0,0,0.1)',
+      position: '',
+      top: '',
     })
     var scene1 = new ScrollMagic.Scene({
       triggerElement: '.history_box3',
@@ -1244,7 +1309,22 @@ $(function () {
       .setPin('.history_box4')
       .addIndicators({ name: 'ヒストリー4' })
       .addTo(controller)
-
+    //浮かぶ
+    var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
+      boxShadow: '0px 2px 2px 2px   rgba(0,0,0,0.1)',
+      repeat: 1,
+      yoyo: true
+    })
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.history_box4',
+      triggerHook: 'onLeave',
+      duration: 220,
+      offset: 40,
+      reverse: true
+    })
+    .setTween(tween)
+    .addIndicators({ name: 'box1透過' })
+    .addTo(controller)
     // レベルアップ
     var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
       borderColor: ef_color,
@@ -1425,6 +1505,23 @@ $(function () {
     .setTween(tween)
       .addIndicators({ name: 'box5透過' })
       .addTo(controller)
+
+    //浮かぶ
+    var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
+      boxShadow: '0px 2px 2px 2px   rgba(0,0,0,0.1)',
+      repeat: 1,
+      yoyo: true
+    })
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.history_box5',
+      triggerHook: 'onLeave',
+      duration: 220,
+      offset: 40,
+      reverse: true
+    })
+    .setTween(tween)
+    .addIndicators({ name: 'box1透過' })
+    .addTo(controller)
 
     // レベルアップ
     var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
@@ -1622,6 +1719,23 @@ $(function () {
       .addIndicators({ name: 'box6透過' })
       .addTo(controller)
 
+    //浮かぶ
+    var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
+      boxShadow: '0px 2px 2px 2px   rgba(0,0,0,0.1)',
+      repeat: 1,
+      yoyo: true
+    })
+    var scene2 = new ScrollMagic.Scene({
+      triggerElement: '.history_box6',
+      triggerHook: 'onLeave',
+      duration: 220,
+      offset: 40,
+      reverse: true
+    })
+    .setTween(tween)
+    .addIndicators({ name: 'box1透過' })
+    .addTo(controller)
+    
     // レベルアップ
     var tween = TweenMax.staggerTo('.top_main_upper_skills_box',speed,{
       borderColor: ef_color,
