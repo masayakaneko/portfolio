@@ -332,8 +332,8 @@ h1{
   bottom: 10px;
   display:flex;  
   &_top{
-    width: 66%;
-    justify-content: left;
+    width: 100%;
+    justify-content: center;
   }
   &_bottom{
     width: 100%;
@@ -423,7 +423,7 @@ h1{
     color: #444;
   }
 }
-#portfolio,#othello,#furima,#line,#triangle,#cymb,#drum,#impact,#sander,#jigsaw,#hammerdrill,#sabersaw,#html,#css,#js,#ruby,#rails,#mysql,#wp,#aws,#gh{
+#gh_furima,#gh_portfolio,#portfolio,#othello,#furima,#line,#triangle,#cymb,#drum,#impact,#sander,#jigsaw,#hammerdrill,#sabersaw,#html,#css,#js,#ruby,#rails,#mysql,#wp,#aws,#gh{
   background-color: var(--f_color);
   border: 3px solid var(--f_color);
   display: flex;

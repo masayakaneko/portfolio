@@ -1921,6 +1921,22 @@ $(function () {
       .setTween(tween)
       .addIndicators({ name: 'products' })
       .addTo(controller)
+    //Flいなくなる
+    var tween = TweenMax.staggerTo('#fl',speed,{
+      boxShadow: '0px 8px 4px 2px   rgba(0,0,0,0.1)',
+      repeat: 1,
+      yoyo: true,
+    })
+    var scene3 = new ScrollMagic.Scene({
+      triggerElement: '.top_main_middle_products_box',
+      triggerHook: 'onLeave',
+      duration: 500,
+      offset: 435,
+      reverse: true
+    })
+      .setTween(tween)
+      .addIndicators({ name: 'products' })
+      .addTo(controller)
 
     var tween = TweenMax.staggerTo('.skill_fl',speed,{
       y: '-330px',
@@ -1949,9 +1965,10 @@ $(function () {
       .addIndicators({ name: 'products' })
       .addTo(controller)
 
-      var tween = TweenMax.staggerTo('#fl,.skill_fl p',speed,{
+      var tween = TweenMax.staggerTo('#fl',speed,{
         borderColor: ef_color,
         color: ef_color,
+        backgroundColor: ef_color,
       })
       var scene4 = new ScrollMagic.Scene({
         triggerElement: '.top_main_middle_products_box',
@@ -1963,9 +1980,24 @@ $(function () {
         .setTween(tween)
         .addIndicators({ name: 'products' })
         .addTo(controller)
+      
+        var tween = TweenMax.staggerTo('.skill_fl p',speed,{
+          color: ef_color,
+        })
+        var scene4 = new ScrollMagic.Scene({
+          triggerElement: '.top_main_middle_products_box',
+          triggerHook: 'onLeave',
+          duration: 100,
+          offset: 1300,
+          reverse: true
+        })
+          .setTween(tween)
+          .addIndicators({ name: 'products' })
+          .addTo(controller)
 
       var tween = TweenMax.staggerTo('.skill_fl',speed,{
         opacity: 0,
+        display: 'none',
       })
       var scene4 = new ScrollMagic.Scene({
         triggerElement: '.top_main_middle_products_box',
@@ -1977,6 +2009,7 @@ $(function () {
         .setTween(tween)
         .addIndicators({ name: 'products' })
         .addTo(controller)
+      
     ////右__発光__1st
     var tween = TweenMax.staggerTo('.portfolio_right_o',speed,{
       zIndex: 0,
